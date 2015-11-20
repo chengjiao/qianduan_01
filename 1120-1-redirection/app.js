@@ -9,6 +9,8 @@ function initAll(){
 }
 
 function initRedirect(){
-	window.location = "index.html";
+	alert("we are not responsible for the content of pages outside our site");
+	//window.location = "index.html";
+	window.location = this;
 	return false;
 }
