@@ -1,0 +1,70 @@
+*{
+	margin: 0px;
+	padding: 0
+}
+.clear{
+	clear: both;
+}
+/*header部分*/
+#header{
+	background-color: #00A0DC;
+}
+.container{
+	width: 85%;
+	margin: 0 auto;
+}
+.container ul{
+	line-height: 3em;
+}
+.top-sec ul li{
+	list-style: none;
+	padding-right: 0.5em;
+	color: #fff;
+}
+.top-sec ul li a{
+	color: #fff;
+	text-decoration: none;	
+}
+.top-sec ul li a:hover{
+	color: rgb(52,52,52);
+}
+.container ul li{
+	float: left;	
+}
+/*header-right*/
+.header-right {
+	float: right;
+}
+/*wedding store*/
+#wedding-store .container{
+	padding-top: 2em;
+}
+.wedding-left{
+	float: left;
+	padding-right: 5em;
+}
+.wedding-left h1{
+	font-size: 2.5em;
+	font-weight: 1000;
+}
+.wedding-meddle ul{
+	float: left;
+}
+.wedding-middle ul li{
+	float: left;
+}
+.wedding-middle ul li{
+	list-style: none;
+	padding-right: 5em;
+}
+.wedding-middle ul li a.li-home{
+	color: #00A0DC;
+	text-decoration: none;
+	font-weight: 700;
+
+}
+.wedding-middle ul li a.li-another{
+	color: #CACCCE;
+	text-decoration: none;
+	font-weight: 700;
+}
