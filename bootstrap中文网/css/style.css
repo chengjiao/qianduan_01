@@ -6,14 +6,32 @@
 .clear{
 	clear: both;
 }
+@media screen and (min-device-width:768px){
+	.container{
+		width: 750px;
+	}
+}
+@media screen and (min-device-width:992px){
+	.container{
+		width: 970px;
+	}
+}
+@media screen and (min-device-width:1200px){
+	.container{
+		width: 1170px;
+	}
+}
+.container{
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
 /*header部分*/
 .header{
 	background-color: #222222;
 }
-.container{
-	width: 85%;
-	margin:0 auto;
-}
+
 .col-head{
 	float: left;
 	font-size: 0.9em;
@@ -129,4 +147,37 @@
 .contact-li a{
 	text-decoration: none;
 	color: #555555;
+}
+/*projects部分*/
+.projects-header{
+	width: 47%;
+	text-align: center;
+	padding-top: 4em;
+	padding-bottom: 2em;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+.projects-header-h1{
+	font-size: 3em;
+	font-weight: 700;
+}
+.projects-header-p{
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+.page-header{
+	border-bottom: 1px solid #eee;
+}
+.col-lg-3{
+	width: 25%;
+	float: left;
+}
+.col-sm-6{
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: center;
+}
+div.col-sm-6 div.thumbnail a img{
+	width: 100%;
 }
