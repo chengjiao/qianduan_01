@@ -240,3 +240,62 @@ h3 small{
 	font-size: 0.9em;
 	line-height: 1.3em;
 }
+.thumbnail .caption a{
+	color: #3F7AB7;
+	text-decoration: none;
+}
+/*footer部分*/
+.footer-top{
+	padding-bottom: 1em;
+}
+.footer{
+	border-top: 1px solid #E5E5E5;
+	padding-top: 3em;
+}
+.footer-left{
+	float: left;
+	width: 50%;
+}
+.footer-left p{
+	padding-top: 0.3em;
+	color: #777777;
+	font-size: 0.9em;
+}
+.footer-left p a{
+	color: #777;
+	text-decoration: none;
+}
+.footer-left p a:hover{
+	text-decoration: underline;
+}
+.footer-right{
+	float: right;
+}
+dl{
+	float: left;
+	margin-right: 3em;
+}
+dl dt{
+	color: #563D7C;
+	padding-bottom: 0.6em;
+}
+dl dd a{
+	color: #777777; 
+	text-decoration: none;
+	line-height: 1.4em;
+	font-size: 0.9em;
+}
+dl dd a:hover{
+	text-decoration: underline;
+}
+.footer-bottom{
+	border-top: 1px solid #E5E5E5;
+	padding-top: 1em;
+	text-align: center;
+	color: #777;
+	font-size: 0.9em;
+	padding-bottom: 3em;
+}
+.footer-bottom p a{
+	color: #777;
+}
