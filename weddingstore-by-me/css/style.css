@@ -4,6 +4,19 @@
 }
 body{
 	font-size: 14px;
+	font-family: 'JosefinSans-Regular','Lato',sans-serif;
+}
+@font-face{
+	font-family: 'JosefinSans-Regular';
+	src:url(../fonts/JosefinSans-Regular.ttf) format('truetype');
+}
+@font-face{
+	font-family: 'JosefinSans-Bold';
+	src:url(../fonts/JosefinSans-Bold.ttf) format('truetype');
+}
+@font-face{
+	font-family: 'JosefinSans-Light';
+	src:url(../fonts/JosefinSans-Light.ttf) format('truetype');
 }
 .container{
 	padding-left: 15px;
