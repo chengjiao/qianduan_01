@@ -99,11 +99,11 @@ body{
 }
 /*welcome部分*/
 .welcome{
-	padding-top: 2em;
-	padding-bottom: 2em;
+	padding-top: 3em;
+	padding-bottom: 3em;
 }
 .welcome-left{
-	font-size: 2em;
+	font-size: 3em;
 	font-weight: 700;
 	color: #00A0DC;
 	width: 20%;
@@ -113,10 +113,103 @@ body{
 	float: right;
 	width: 75%;
 }
-.welcome-right h5{
+.welcome-right h2{
 	color: #333333;
 }
 .welcome-right p{
 	color: #999999;
 	padding-top: 1em;
+	line-height: 1.5em;
+}
+/*pictures部分*/
+.pic-1{
+	width: 33.333333%;
+}
+.picture-left{
+	float: left;
+}
+.picture-middle{
+	float: left;
+}
+.picture-right{
+	float: right;
+}
+figure img{
+	width: 100%;
+}
+figure p{
+	padding-bottom: 1.1em;
+    padding-top: 0.8em;
+    font-size: 2em;
+}
+.pic-middle img{
+	width: 100%;
+}
+.pic-middle p{
+	font-size: 2em;
+	padding-bottom: 1.1em;
+    padding-top: 0.8em;
+}
+.pic-left{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.pic-middle{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.pic-right{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+/*feature部分*/
+.feature{
+	padding-top: 3em;
+    padding-bottom: 3em;
+}
+.feature-top h2{
+	text-align: center;
+	font-size: 2em;
+	font-weight: 700;
+	color: #00A0DC;
+}
+.feature-bottom{
+	padding-top: 2em;
+}
+.fea-1{
+	width: 25%;
+	float: left;
+	text-align: center;	
+}
+.fea-1 a{
+	text-decoration: none;
+}
+.fea-2{
+	padding: 1em;
+}
+.fea-1 a .fea-2 img{
+	padding:0em 2em 1em 2em;
+	vertical-align: middle;
+}
+.arrival-info{
+	padding-top: 1em;
+}
+.arrival-info h4{
+	color: #caccce;
+	font-size: 0.9em;
+	text-transform: uppercase;
+}
+.arrival-info p{
+	color: #000;
+	font-size: 1em;
+	font-weight: 600;
+	margin: 10px 0 5px;
+}
+.pricl{
+	color: #adadad;
+	font-size: 0.95em;
+}
+.disc{
+	color: rgba(7,152,40,0.69);
+	font-size: 0.85em;
 }
