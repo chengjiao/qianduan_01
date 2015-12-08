@@ -226,3 +226,87 @@ figure p{
 	color: rgba(7,152,40,0.69);
 	font-size: 0.85em;
 }
+/*arrivals部分*/
+.arrivals{
+	padding-bottom: 2em;
+}
+.arrivals-head{
+	padding-bottom: 2em;
+}
+.arrivals-head h2{
+	text-align: center;
+	color: #00A0DC;
+	font-size: 2.3em;
+	font-weight: 700;
+}
+/*shopping部分*/
+.shopping{
+	padding-top: 4em;
+	padding-bottom: 4em;
+	background-color: #EEEEEE;
+}
+.shop-1{
+	width: 33.333333%;
+	float: left;
+	text-align: center;
+	text-transform: uppercase;
+}
+.shop-2{
+	border-right: 2px solid #B7B7B7;
+}
+.shop-1 h2{
+	font-family: 'JosefinSans-Bold';
+	color: #333333;
+	font-size: 2em;
+	font-weight: 700;
+}
+.shop-1 p{
+	font-family: 'JosefinSans-Light';
+	color: #CC7777;
+	font-size: 1.5em;
+	font-weight: 200;
+	padding-top: 0.5em;
+}
+/*footer部分*/
+.footer{
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+.footer-top-1{
+	float: left;
+	width: 25%;
+}
+.footer-top-1 dl{
+	margin-right: 2em;
+}
+.footer-top-1 dl dt{
+	color: #646464;
+	border-bottom: 1px solid #E5E5E5;
+	margin-bottom: 1em;
+	font-size: 1.5em;
+}
+.footer-top-1 dl dd a{
+	text-decoration: none;
+	color: #777777;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+.footer-top-1 dl dd a:hover{
+	color: #00A1DD;
+}
+.footer-bottom{
+	padding-top: 2em;
+}
+.footer-bottom p{
+	color: #999999;
+	font-size: 0.9em;
+}
+.footer-bottom p a{
+	color: #999999;
+	text-decoration: none;
+	font-size: 0.9em;
+}
+.footer-bottom p a:hover{
+	text-decoration: underline;
+	color: #999;
+}
