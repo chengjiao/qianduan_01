@@ -116,6 +116,7 @@ body{
 	padding: 20px 30px 20px;
 	border:solid 1px #ccc;
 	box-sizing:border-box;
+	display: none;
 }
 .row dl{
 	float: left;
