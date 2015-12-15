@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh" >
+<head>
+	<title>Calculate</title>
+	<link rel="stylesheet" type="text/css" href="calculate.css">
+</head>
+<body>
+	<div>
+		<table >
+			<tr>
+				<td  colspan="4"><input type="text"  /></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="C" onclick="clean" /></td>
+				<td><input type="button" value="+/-" onclick="calcu" /></td>
+				<td><input type="button" value="%" onclick="calcu" /></td>
+				<td><input type="button" value="/" onclick="calcu" /></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="7" onclick="num(this)" /></td>
+				<td><input type="button" value="8" onclick="num(this)" /></td>
+				<td><input type="button" value="9" onclick="num(this)" /></td>
+				<td><input type="button" value="*" onclick="calcu" /></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="4" onclick="num(this)" /></td>
+				<td><input type="button" value="5" onclick="num(this)" /></td>
+				<td><input type="button" value="6" onclick="num(this)" /></td>
+				<td><input type="button" value="-" onclick="calcu" /></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="1" onclick="num(this)" /></td>
+				<td><input type="button" value="2" onclick="num(this)" /></td>
+				<td><input type="button" value="3" onclick="num(this)" /></td>
+				<td><input type="button" value="+" onclick="calcu" /></td>
+			</tr>
+			<tr>
+				<td colspan="2" ><input type="button" value="0" onclick="num(this)" /></td>
+				<td><input type="button" value="." onclick="dots" /></td>
+				<td><input type="button" value="=" onclick="result" /></td>
+			</tr>
+		</table>
+	</div>
+</body>
+<script type="text/javascript">
+	function num(obj){
+		alert(obj.value);
+	}	
+
+</script>
+</html>
