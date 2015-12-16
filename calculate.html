@@ -1,51 +1,112 @@
 <!DOCTYPE html>
-<html lang="zh" >
+<html lang="zh-cn" >
 <head>
 	<title>Calculate</title>
 	<link rel="stylesheet" type="text/css" href="calculate.css">
+	<meta charset="utf-8" >
 </head>
 <body>
 	<div>
 		<table >
 			<tr>
-				<td  colspan="4"><input type="text"  /></td>
+				<td  colspan="4"><input type="text" id="show" /></td>
 			</tr>
 			<tr>
-				<td><input type="button" value="C" onclick="clean" /></td>
+				<td><input type="button" value="C" onclick="clean()" /></td>
 				<td><input type="button" value="+/-" onclick="calcu" /></td>
 				<td><input type="button" value="%" onclick="calcu" /></td>
-				<td><input type="button" value="/" onclick="calcu" /></td>
+				<td><input type="button" value="/" onclick="calcu(this)" /></td>
 			</tr>
 			<tr>
 				<td><input type="button" value="7" onclick="num(this)" /></td>
 				<td><input type="button" value="8" onclick="num(this)" /></td>
 				<td><input type="button" value="9" onclick="num(this)" /></td>
-				<td><input type="button" value="*" onclick="calcu" /></td>
+				<td><input type="button" value="*" onclick="calcu(this)" /></td>
 			</tr>
 			<tr>
 				<td><input type="button" value="4" onclick="num(this)" /></td>
 				<td><input type="button" value="5" onclick="num(this)" /></td>
 				<td><input type="button" value="6" onclick="num(this)" /></td>
-				<td><input type="button" value="-" onclick="calcu" /></td>
+				<td><input type="button" value="-" onclick="calcu(this)" /></td>
 			</tr>
 			<tr>
 				<td><input type="button" value="1" onclick="num(this)" /></td>
 				<td><input type="button" value="2" onclick="num(this)" /></td>
 				<td><input type="button" value="3" onclick="num(this)" /></td>
-				<td><input type="button" value="+" onclick="calcu" /></td>
+				<td><input type="button" value="+" onclick="calcu(this)" /></td>
 			</tr>
 			<tr>
 				<td colspan="2" ><input type="button" value="0" onclick="num(this)" /></td>
 				<td><input type="button" value="." onclick="dots" /></td>
-				<td><input type="button" value="=" onclick="result" /></td>
+				<td><input type="button" value="=" onclick="cal()" /></td>
 			</tr>
 		</table>
+		<p id="one">第一个操作数是：</p>
+		<p id="two">运算符是：</p>
+		<p id="three">第二个操作数是：</p>
+		<p id="res">结果是：</p>
 	</div>
 </body>
 <script type="text/javascript">
+	// function num(obj){
+	// 	alert(obj.value);
+	// }	
+	var a1 = '';
+	var a2 = '';
+	var p = '';
+	var ope = false;
+	function add(oper1,oper2){
+		document.getElementById('show').value = parseInt(oper1) + parseInt(oper2);
+		//operation = -1;
+	}
+	function sub(oper1,oper2){
+		document.getElementById('show').value = parseInt(oper1) - parseInt(oper2);
+		//operation = -1;
+	}
+	function mul(oper1,oper2){
+		document.getElementById('show').value = parseInt(oper1) * parseInt(oper2);
+		//operation = -1;
+	}
+	function div(oper1,oper2){
+		document.getElementById('show').value = parseInt(oper1) / parseInt(oper2);
+		//operation = -1;
+	}
 	function num(obj){
-		alert(obj.value);
-	}	
+		if(!ope) {
+			a1 += obj.value;
+			 document.getElementById('show').value = a1;
+		}else {
+			a2 += obj.value;
+			 document.getElementById('show').value = a2;
+		}
+		 
+		
+	}
+	function calcu(obj){
+		ope = true;
+		p = obj.value;
+	}
 
+	function cal(){
+		switch(p) {
+			case '+':
+			add(a1,a2);
+			break;
+		}
+		document.getElementById('one').style.display = 'block';
+		document.getElementById('two').style.display = 'block';
+		document.getElementById('three').style.display = 'block';
+		document.getElementById('res').style.display = 'block';
+		document.getElementById('one').innerHTML+=a1;
+		document.getElementById('two').innerHTML+=p;
+		document.getElementById('three').innerHTML+=a2;
+		document.getElementById('res').innerHTML+=document.getElementById('show').value;
+	}
+	function clean() {
+		a1 = '';
+		a2 = '';
+		p = '';
+		ope = false;
+	}
 </script>
 </html>
