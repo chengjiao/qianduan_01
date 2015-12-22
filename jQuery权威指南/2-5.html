@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>使用jQuery基本过滤选择器</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+	<style type="text/css">
+		body{font-size: 24px; text-align: center;}
+		div{width: 21px; height: 83px; border: solid 1px #eee;}
+		h1{font-size: 13px;}
+		ul{list-style-type: none;padding: 0px;}
+		.DefClass, .NotClass{
+			height: 23px;width: 60px;line-height: 23px;float: left;border-top: solid 1px #eee;border-bottom: solid 1px #eee;
+		}
+		.GetFocus{width: 58px;border: solid 1px #666;background-color: #eee;}
+		.spnMove{width: 238px; height: 23px; line-height: 23px;}
+	</style>
+	<script type="text/javascript">
+	// $(function(){
+	// 	$("li:first").addClass("GetFocus");
+	// })
+// $(function(){
+// 	$("li:last").addClass("GetFocus");
+// })
+	// $(function(){
+	// 	$("li:not(.NotClass)").addClass("GetFocus");
+	// })
+	// $(function(){
+	// 	$("li:odd").addClass("GetFocus");
+	// })
+	// $(function(){
+	// 	$("li:even").addClass("GetFocus");
+	// })
+	// $(function(){
+	// 	$("li:eq(1)").addClass("GetFocus");
+	// })
+	// $(function(){
+	// 	$("li:gt(1)").addClass("GetFocus");
+	// })
+	// $(function(){
+	// 	$("li:lt(4)").addClass("GetFocus");
+	// })
+	// $(function(){//增加标题类元素类别
+	// 	$("div h1").css("width","238");
+	// 	$(":header").addClass("GetFocus");
+	// })
+	$(function(){
+		animateIt();
+		$("#spnMove:animated").addClass("GetFocus");
+	})
+	function animateIt(){
+		$("#spnMove").slideToggle("slow",animateIt);
+	}
+	</script>
+</head>
+<body>
+<div>
+	<h1>基本过滤选择器</h1>
+	<ul>
+		<li class="DefClass">Item0</li>
+		<li class="DefClass">Item1</li>
+		<li class="NotClass">Item2</li>
+		<li class="DefClass">Item3</li>
+	</ul>
+	<span id="spnMove">Span Move</span>
+</div>
+</body>
+</html>

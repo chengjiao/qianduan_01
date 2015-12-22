@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>使用jQuery层次选择器</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+	<style type="text/css">
+	body{
+		font-size: 12px;
+		text-align: center;
+	}
+	div,span{
+		float: left;
+		border: 1px solid #ccc;
+		margin: 8px;
+		display: none;
+	}
+	.clsFraA{
+		width: 65px;height: 65px;
+	}
+	.clsFraP{
+		width: 45px;
+		height: 45px;
+		background-color: #eee;
+	}
+	.clsFraC{
+		width: 25px;
+		height: 25px;
+		background-color: #ddd;
+	}
+	</style>
+	<script type="text/javascript">
+	// $(function(){//匹配后代元素
+	// 	$("#divMid").css("display","block");
+	// 	$("div span").css("display","block"); //根据祖先元素匹配所有的后代元素
+	// 	}
+	// )
+	// $(function(){//匹配子元素
+	// 	$("#divMid").css("display","block");
+	// 	$("div>span").css("display","block");//根据父元素匹配所有的子元素
+	// })
+	// $(function(){
+	// 	//匹配所有紧接在divMid后的相邻元素
+	// 	//#divMid+div可以使用("divMid").next()代替
+	// 	$("#divMid+div").css("display","block");
+	// 	$("divMid").next().css("display","block");
+	// })
+	// $(function(){//匹配所有后面元素
+	// 	//prev~siblings:匹配prev元素之后的所有兄弟元素
+	// 	//prev~siblings可以使用nextAll()代替。
+	// 	$("#divMid ~ div").css("display","block");
+	// 	$("divMid").nextAll().css("display","block");
+	// })
+	$(function(){//匹配所有相邻元素
+		$("#divMid").siblings("div").css("display","block");
+	})
+	</script>
+</head>
+<body>
+<div class="clsFraA">Left</div>
+<div class="clsFraA" id="divMid">
+	<span class="clsFraP" id="Span1">
+		<span class="clsFraC" id="Span2"></span>
+	</span>
+</div>
+<div class="clsFraA">Right_1</div>
+<div class="clsFraA">Right_2</div>
+</body>
+</html>

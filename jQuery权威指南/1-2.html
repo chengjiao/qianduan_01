@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+	<style type="text/css">
+	.iFrame{
+		border: 1px solid #888;
+		font-size: 13px;
+	}
+	.title{
+		padding: 8px;
+	}
+	.content{
+		padding: 8px 0px;
+		display: none;
+		text-align: center;
+	}
+	.curcol{
+		background-color: #dbabad;
+	}
+	</style>
+	<script type="text/javascript">
+	$(function(){
+		$(".content").html("您好！欢迎来到jQuery的精彩世界。");
+		$(".title").click(
+		function(){
+	    	$(this).addClass("curcol")
+		    .next(".content").css("display","block") ;
+		});
+	})
+	</script>
+</head>
+<body>
+<div class="iFrame">
+	<div class="title">标题</div>
+	<div class="content"></div>
+</div>
+</body>
+</html>

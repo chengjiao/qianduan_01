@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+	<style type="text/css">
+	.iFrame{
+		border: 1px solid #888;
+		font-size: 14px;
+	}
+	.defcol{
+		padding: 6px;
+		background-color: #eee;
+	}
+	.curcol{
+		padding: 6px;
+		background-color: #678987;
+		color: #fff;
+	}
+	</style>
+	<script type="text/javascript">
+	$(function(){
+		$(".defcol").click(function(){
+			$(this).toggleClass("curcol");
+		});
+	});
+	</script>
+</head>
+<body>
+<div class="iFrame">
+	<div class="defcol">标题</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+<form name="a" action="" method="post">
+	<input type="text" name="shuru" placeholder="Please enter English" onchange="changed()" />
+	<label name="tishi" id="ti"></label><br />
+	<input type="button" onclick="myOnclick()" name="anniu" />
+</form>
+<script type="text/javascript">	
+	function changed(){
+
+		var aInput = document.forms.a.shuru.value;
+		var reCat = /[a-zA-Z]+?/;
+		var arrdate = reCat.test(aInput);
+		// console.log(document.forms.a.tishi);
+		if (!arrdate) {
+			 document.getElementById("ti").style.color="red";
+			 document.getElementById("ti").innerHTML="请输入英文";
+		}else{
+			document.getElementById("ti").innerHTML="";
+		}
+	}
+</script>
+</body>
+</html>
