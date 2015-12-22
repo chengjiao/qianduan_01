@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>使用jQuery内容过滤选择器</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+	<style type="text/css">
+	body{
+		font-size: 12px; text-align: center;
+	}
+	div{
+		float: left;border: 1px solid #ccc; margin: 8px;
+		width: 65px; height: 65px; display: none;
+	}
+	span{
+		float: left; border: 1px solid #ccc; margin: 8px;
+		width: 45px; height: 45px; background-color: #eee;
+	}
+	</style>
+	<script type="text/javascript">
+	// $(function(){//字母的大小写有区别
+	// 	$("div:contains('A')").css("display","block");
+	// })
+	// $(function(){
+	// 	$("div:empty").css("display","block");
+	// })
+	// $(function(){
+	// 	$("div:has(span)").css("display","block");
+	// })
+	$(function(){
+		$("div:parent").css("display","block");
+	})
+	</script>
+</head>
+<body>
+<div>ABCD</div>
+<div><span></span></div>
+<div>FEYG</div>
+<div></div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>使用jQuery内容过滤选择器</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+	<style type="text/css">
+	body{
+		font-size: 12px;
+		text-align: center;
+	}
+	div,span{
+		float: left; border: 1px solid #ccc;
+		margin: 8px; width: 65px; height: 65px;
+	}
+	.GetFocus{
+		border: solid 1px #666;
+		background-color: #eee;
+	}
+	</style>
+	<script type="text/javascript">
+	// $(function(){//增加所有不可见元素类别
+	// 	$("span:hidden").show().addClass("GetFocus");
+	// })
+	$(function(){
+		$("span:hidden").show();
+		$("div:visible").addClass("GetFocus");
+	})
+	</script>
+</head>
+<body>
+<span style="display:none">Hidden</span>
+<div>Visible</div>
+</body>
+</html>
