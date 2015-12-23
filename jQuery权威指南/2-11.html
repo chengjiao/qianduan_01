@@ -1,0 +1,52 @@
+<html>
+<head>
+	<title>使用jQuery表单过滤选择器</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+	<style type="text/css">
+		body{
+			font-size: 12px; text-align: center;
+		}
+		form{
+			width: 241px;
+		}
+		textarea,select,button,input,span{
+			display: none;
+		}
+		.btn{
+			border:1px solid #666; padding: 2px; width: 60px;
+			filter:progid:DXImageTransform.Microsoft.Gradient(GradoentType=0,StartColorStr+fff,EndColorStr=#ece9d8);
+		}
+		.txt{
+			border:#666 1px solid; padding: 3px;
+		}
+		.img{
+			padding: 2px; border:solid 1px #ccc;
+		}
+		.div{
+			border:solid 1px #ccc; background-color: #eee; padding: 5px;
+		}
+	</style>
+	<script type="text/javascript">
+		$(function(){
+			$("#form1 div").html("表单工找出 Input 类型元素："+$("#form1 :input").length);
+			$("#form1 div").addClass("div");
+		})
+	</script>
+</head>
+<body>
+<form id="form1">
+	<textarea class="txt">TextArea</textarea>
+	<select><option value="0">Item 0</option></select>
+	<input type="text" value="text" class="txt" />
+	<input type="password" value="password" class="txt" />
+	<input type="radio" /><span id="Span1">Radio</span>
+	<input type="checkbox" /><span id="Span2">CheckBox</span>
+	<input type="submit" value="Submit" class="btn" />
+	<input type="image" title="Image" src="Image/logo.png" class="img">
+	<input type="reset" value="Reset" class="btn" />
+	<input type="button" value="Button" class="btn" />
+	<input type="file" title="File" class="txt" />
+</form>
+</body>
+</html>
