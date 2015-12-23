@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>导航条在项目中的应用</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+	<style type="text/css">
+	body{
+		font-size: 13px;
+	}
+	#divFrame{
+		border: 1px solid #666;
+		width: 320px;
+	}
+	#divFrame .clsHead{
+		background-color: #eee; padding: 8px; height: 18px; cursor: hand
+	}
+	#divFrame .clsHead h3{padding: 0px; margin: 0px; float: left;}
+	#divFrame .clsHead span{float: right; margin-top: 3px;}
+	#divFrame .clsContent{padding: 8px;}
+	#divFrame .clsContent ul{list-style-type: none; margin: 0px; padding: 0px;}
+	#divFrame .clsContent ul li{float: left;width: 95px;height: 23px; line-height: 23px;}
+	#divFrame .clsBot{float: right; padding-top: 5px;padding-bottom: 5px;}
+	.image1 {
+		background:#fff url('Image/up.png')
+	}
+	.image2 {
+		background:#fff url('Image/down.png')
+	}
+	.GetFocus{background-color: #eee;}
+	.clear{clear: both;}
+	</style>
+	<script type="text/javascript">
+	$(function(){
+		$(".clsHead").click(function(){
+			if($(".clsContent").is(":visible")){
+				$(".clsHead span img").attr('src','Image/up.png');
+				$('.clsContent').css('display','none');
+			}else{
+				$(".clsHead span img").attr('src','Image/down.png');
+				$(".clsContent").css('display','block');
+			}
+		});
+		$(".clsBot").click(function(){
+			if ($(".clsBot a").text()=="简化") {
+				$("ul li:gt(4):not(:last)").css('display','none');
+				$(".clsBot a").html("更多");
+				//$("ul li:last").removeClass("GetFocus");
+			}else{
+				$("ul li:gt(4):not(:last)").css('display','block');
+				$(".clsBot a").html("简化");
+				$("ul li:gt(4):not(:last)").addClass("GetFocus");
+			}
+		});
+	})
+	</script>
+</head>
+<body>
+<div id="divFrame">
+	<div class="clsHead">
+		<h3>图书分类</h3>
+		<span><img class="image2" src="Image/down.png"></span>
+		<div class="clear"></div>
+	</div>
+	<div class="clsContent">
+		<ul>
+			<li><a href="#">小说</a><i>（1110）</i></li>
+			<li><a href="#">文艺</a><i>（230）</i></li>
+			<li><a href="#">青春</a><i>（1430）</i></li>
+			
+			<li><a href="#">少儿</a><i>（1560）</i></li>
+			<li><a href="#">生活</a><i>（870）</i></li>
+			<li><a href="#">社科</a><i>（1460）</i></li>
+			
+			<li><a href="#">管理</a><i>（1450）</i></li>
+			<li><a href="#">计算机</a><i>（1780）</i></li>
+			<li><a href="#">教育</a><i>（930）</i></li>
+			
+			<li><a href="#">工具书</a><i>（3450）</i></li>
+			<li><a href="#">引进版</a><i>（980）</i></li>
+			<li><a href="#">其他类</a><i>（3230）</i></li>
+			
+		</ul>
+		<div class="clsBot">
+			<a href="#">简化</a>
+			<img src="Image/arrow.png">
+	    </div>
+		<div class="clear"></div>
+	</div>
+
+	
+</div>
+</body>
+</html>

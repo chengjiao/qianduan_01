@@ -28,9 +28,37 @@
 		}
 	</style>
 	<script type="text/javascript">
+		// $(function(){
+		// 	$("#form1 div").html("表单工找出 Input 类型元素："+ $("#form1 :input").length);
+		// 	$("#form1 div").addClass("div");
+		// })
+		// $(function(){ //显示所有文本框对象
+		// 	$("#form1 :text").show(3000);
+		// })
+		// $(function(){ //显示所有密码框对象
+		// 	$("#form1 :password").show(3000);
+		// })
+		// $(function(){
+		// 	$("#form1 :radio").show(3000);
+		// })
+		// $(function(){
+		// 	$("#form1 :checkbox").show(3000);
+		// 	$("#form1 #Span2").show(3000);
+		// })
+		// $(function(){
+		// 	$("#form1 :submit").show(3000);
+		// })
+		// $(function(){
+		// 	$("#form1 :image").show(3000);
+		// })
+		// $(function(){
+		// 	$("#form1 :reset").show(3000);
+		// })
+		// $(function(){
+		// 	$("#form1 :button").show(3000);
+		// })
 		$(function(){
-			$("#form1 div").html("表单工找出 Input 类型元素："+$("#form1 :input").length);
-			$("#form1 div").addClass("div");
+			$("#form1 :file").show(3000);
 		})
 	</script>
 </head>
@@ -47,6 +75,7 @@
 	<input type="reset" value="Reset" class="btn" />
 	<input type="button" value="Button" class="btn" />
 	<input type="file" title="File" class="txt" />
+	<div id="divShow"></div>
 </form>
 </body>
 </html>
