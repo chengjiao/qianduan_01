@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>设置元素的属性</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+	<style type="text/css">
+		body{font-size: 12px;}
+		.clsSpn{float: left; padding-top:10px; padding-left: 10px;}
+		.clsImg{border:solid 1px #ccc; padding: 3px;float: left;}
+	</style>
+	<script type="text/javascript">
+	$(function(){
+		// $("img").attr("src","Image/up.png");
+		// $("img").attr("title","这是一幅风景画");
+		$("img").attr({"src":"Image/up.png","title":"这是一幅风景画"});
+		$("img").addClass("clsImg");
+		$("span").html("加载完毕");
+	})
+	</script>
+</head>
+<body>
+<img src="Image/logo.png" alt="" style="float:left" />
+<span class="clsSpn">正在加载图片...</span>
+</body>
+</html>

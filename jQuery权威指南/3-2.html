@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>获取元素的属性</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+	<style type="text/css">
+		body{
+			font-size: 12px;
+		}
+		div{float: left; padding-left: 10px;}
+		img{
+			border:solid 1px #ccc; padding: 3px; float: left;
+		}
+	</style>
+	<script type="text/javascript">
+		$(function(){
+			var strAlt = $("img").attr("src");
+			strAlt += "<br />"+ $("img").attr("title");
+			$("#divAlt").html(strAlt);
+		})
+	</script>
+</head>
+<body>
+<img src="Image/logo.png" alt="" title="这是一幅风景画">
+<div id="divAlt"></div>
+</body>
+</html>
