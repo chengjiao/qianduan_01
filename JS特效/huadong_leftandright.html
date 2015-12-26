@@ -1,0 +1,74 @@
+<!-- 无缝左右滚动 -->
+<style type="text/css">
+    #scroll_gun{height:108px;margin:0 auto;position:relative;overflow:hidden;}/*width:698px;*/
+    .btn_left{display:block;width:68px;height:68px;background:url(images/btn.jpg) no-repeat -70px -69px;position:absolute;top:20px;left:1px;z-index:1;}
+    .btn_left:hover{background:url(images/btn.jpg) no-repeat -70px 0;}
+    .btn_right{display:block;width:68px;height:68px;background:url(images/btn.jpg) no-repeat 1px -69px;position:absolute;top:20px;right:0;z-index:1;}
+    .btn_right:hover{background:url(images/btn.jpg) no-repeat 1px 0;}
+    #scroll_gun .scr_content{width:70%;height:108px;position:relative;overflow:hidden;margin:0 auto;}
+    #scroll_gun ul{position:absolute;}
+    #scroll_gun li{float:left;width:210px;height:108px;text-align:center;padding: 5px;box-sizing:border-box;}
+    /*#scroll li a:hover{position:relative;top:2px;}*/
+    #scroll_gun li a img{border: 2px solid #eee;}
+    #scroll_gun li .txt a{color: black;}
+    #scroll_gun li .txt{
+    	text-align: center;
+    	height: 23px;
+    	line-height: 23px;
+    	font-size: 12px;
+    }
+</style>
+<div id="scroll_gun">
+        <!-- <a href="javascript:;" class="btn_left"></a>
+        <a href="javascript:;" class="btn_right"></a> -->
+        <div class="scr_content">
+            <ul>
+                <li><a href="#"><img src="images/8b00b68af291f4b8637f208a8f433531.png" width="200" height="80" alt=""/></a>
+                	<div class="txt"><a href="#">1</a></div>
+                </li>
+                <li><a href="#"><img src="images/f435b305325da8e9e1923f180c9fa2cd.png" width="200" height="80" alt=""/></a><div class="txt"><a href="#">1</a></div></li>
+                <li><a href="#"><img src="images/dd3f2fbab7ce6858606f8cab7fb5e6c2.png" width="200" height="80" alt=""/></a><div class="txt"><a href="#">1</a></div></li>
+                <li><a href="#"><img src="images/051c687af0dc1226def50d2de4c8d9d1.png" width="200" height="80" alt=""/></a><div class="txt"><a href="#">1</a></div></li>
+                <li><a href=""><img src="images/4235e78f50136d9a263caabc381f8b07.png" width="200" height="80" ></a><div class="txt"><a href="#">1</a></div></li>
+            </ul>
+        </div>
+</div>
+<script type="text/javascript">
+var GUN = function(){
+    var oDiv = document.getElementById('scroll_gun');
+    var oUl = oDiv.getElementsByTagName('ul')[0];
+    var aLi = oDiv.getElementsByTagName('li');
+    var aBtn = oDiv.getElementsByTagName('a');
+    var speed = -1;
+    var timer = null;
+    oUl.innerHTML += oUl.innerHTML;
+    oUl.style.width = aLi[0].offsetWidth * aLi.length + 'px';
+    timer = setInterval(function(){
+        oUl.style.left = oUl.offsetLeft + speed + 'px';
+        if(oUl.offsetLeft < - oUl.offsetWidth / 2){
+            oUl.style.left = '0';
+        }else if(oUl.offsetLeft > 0){
+            oUl.style.left = - oUl.offsetWidth / 2 + 'px';
+        }
+    },30);
+    aBtn[0].onclick = function(){
+        speed = -1;
+    };
+    aBtn[1].onclick = function(){
+        speed = 1;
+    };
+    oUl.onmouseover = function(){
+        clearInterval(timer);
+    };
+    oUl.onmouseout = function(){
+        timer = setInterval(function(){
+            oUl.style.left = oUl.offsetLeft + speed + 'px';
+            if(oUl.offsetLeft < -oUl.offsetWidth / 2){
+                oUl.style.left = '0';
+            }else if(oUl.offsetLeft > 0){
+                oUl.style.left = - oUl.offsetWidth / 2 + 'px';
+            }
+        },30);
+    };
+}();
+</script>
