@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>获取或设置元素的值</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+	<style type="text/css">
+	body{font-size: 12px;text-align: center;}
+	div{padding: 3px;margin: 3px;width: 120px;float: left;}
+	.txt{border: #666 1px solid ;padding: 3px;}
+	</style>
+	<script type="text/javascript">
+	$(function(){
+		$("select").change(function(){
+			//获取列表框所选中的全部选项的值
+			var strSel = $("select").val().join(",");
+			$("#p1").html(strSel);
+		})
+		$("input").change(function(){
+			var strTxt = $("input").val();
+			$("#p2").html(strTxt);
+		})
+		$("input").focus(function(){
+			$("input").val(""); //清空文本框的值
+		})
+	})
+
+	</script>
+</head>
+<body>
+<div>
+	<select multiple="multiple" style="height:96px;width:85px;">
+		<option value="1">Item 1</option>
+		<option value="2">Item 2</option>
+		<option value="3">Item 3</option>
+		<option value="4">Item 4</option>
+		<option value="5">Item 5</option>
+		<option value="6">Item 6</option>
+	</select>
+	<p id="p1"></p>
+</div>
+<div>
+	<input type="text" class="txt" />
+	<p id="p2"></p>
+</div>
+</body>
+</html>

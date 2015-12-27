@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>直接设置元素样式值</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+	<style type="text/css">
+	body{font-size: 12px;}
+	p{padding: 5px; width: 220px;}
+	</style>
+	<script type="text/javascript">
+	$(function(){
+		/*$("p").css("font-weight","bold");*/
+		$("p").click(function(){
+			$(this).css("font-weight","bold");
+			$(this).css("font-style","italic");
+			$(this).css("background-color","#eee");
+		})
+	})
+	</script>
+</head>
+<body>
+<p>Write Less Do More</p>
+</body>
+</html>

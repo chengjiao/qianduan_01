@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>类别切换</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+	<style type="text/css">
+	.clsImg{border: 1px solid #eee;padding: 3px;}
+	</style>
+	<script type="text/javascript">
+	$(function(){
+		$("img").click(function(){
+			$(this).toggleClass("clsImg");
+		})
+	})
+	</script>
+</head>
+<body>
+<img src="image/logo1.png" alt="" title="jQuery">
+</body>
+</html>
