@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>包裹元素节点</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+	<style type="text/css">
+	body{font-size: 13px;}
+	p{background-color: #eee;padding: 5px;width: 200px;}
+	</style>
+	<script type="text/javascript">
+	$(function(){
+		$("p").wrap("<b></b>");
+		$("span").wrapInner("<i></i>");
+	})
+	</script>
+</head>
+<body>
+<p>最喜爱的体育运动:<span>羽毛球</span></p>
+<p>最爱看那类型图书：<span>网络、技术</span></p>
+</body>
+</html>
