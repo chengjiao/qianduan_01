@@ -1,0 +1,20 @@
+<html>
+<head>
+	<title>动态插入节点方法</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+	<style type="text/css">
+		body{font-size: 13px;}
+		img{border:solid 1px #ccc;padding: 3px; margin: 5px;}
+	</style>
+	<script type="text/javascript">
+		$(function(){
+			$("img").appendTo($("span"));
+		})
+	</script>
+</head>
+<body>
+<img src="Image/logo1.png" title="2008年新书封面">
+<span><img src="Image/arrow.png" title="2010年新书封面"></span>
+</body>
+</html>

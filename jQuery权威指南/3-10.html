@@ -1,0 +1,57 @@
+<html>
+<head>
+	<title>动态创建元素节点</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+	<style type="text/css">
+		body{font-size: 12px;}
+		ul{padding: 0px; list-style: none;}
+		ul li{line-height: 2.0em;}
+		.divL{float: left;width: 200px;background-color: #eee; border:soild 1px #666;margin: 5px;padding: 0px 8px 0px 8px;}
+		.divR{float: left;width: 200px;display: none;border:solid 1px #ccc;margin: 5px;padding: 0px 8px 8px 8px;}
+		.txt{border:#666 1px solid;padding: 3px;width: 120px;}
+		.btn{border:#666 1px solid; padding: 2px;width: 60px;filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#fff,EndColorStr=#ece9d8);}
+	</style>
+	<script type="text/javascript">
+		$(function(){
+			$("#Button1").click(function(){
+				/*获取参数*/
+				var $str1 = $("#select1").val();
+				var $str2 = $("#text1").val();
+				var $str3 = $("#select2").val();
+				var $str4 = $("#text2").val();
+				var $div = $("<" + $str1 +" " + $str3 + "='" + $str4 +"'>" + $str2 +"</" + $str1 +">");
+				$(".divR").show().append($div);
+			})
+		})
+	</script>
+</head>
+<body>
+<div class="divL">
+	<p></p>
+	<ul>
+		<li>元素名：
+			<select id="select1">
+				<option value="p">P</option>
+				<option value="div">div</option>
+			</select>
+		</li>
+		<li>内容为：
+			<input type="text" id="text1" class="txt" />
+		</li>
+		<li>属性名：
+			<select id="select2">
+				<option value="title">title</option>
+			</select>
+		</li>
+		<li>属性值：
+			<input type="text" id="text2" class="txt" />
+		</li>
+		<li style="text-align:center;padding-top:5px;">
+			<input id="Button1" type="button" value="创建" class="btn">
+		</li>
+	</ul>
+</div>
+<div class="divR"></div>
+</body>
+</html>

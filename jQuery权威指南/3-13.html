@@ -1,0 +1,22 @@
+<html>
+<head>
+	<title>动态插入节点方法</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+	<style type="text/css">
+	body{font-size: 13px;}
+	</style>
+	<script type="text/javascript">
+		$(function(){
+			$("span").after(retHtml);
+			function retHtml(){
+				var str = "<span><b>Write Less Do More</b></span>";
+				return str;
+			}
+		})
+	</script>
+</head>
+<body>
+<span>jQuery</span>
+</body>
+</html>
