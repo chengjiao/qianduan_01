@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>遍历元素</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+	<style type="text/css">
+		body{font-size: 13px;}
+		img{border:soild 1px #ccc; padding: 3px; margin: 5px; width: 143px; height: 101px;}
+	</style>
+	<script type="text/javascript">
+		$(function(){
+			$("img").each(function(index){
+				this.title = "第" + index +"幅风景画，alt内容是"+this.alt;
+			})
+		})
+	</script>
+</head>
+<body>
+<p>
+<img src="Image/arrow.png" alt="第0幅风景画" />
+<img src="Image/down.png" alt="第1幅风景画" />
+<img src="Image/up.png" alt="第2幅风景画" />
+</p>
+</body>
+</html>
