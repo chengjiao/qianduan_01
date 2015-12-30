@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>数据删除和图片预览在项目中的应用</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+	<style type="text/css">
+	body{font-size: 15px;margin: 0px;padding: 0px;}
+	table{margin: 0 auto;padding-top: 2em;}
+	td{border: 1px solid #eee;}
+	.bgColor{background-color: #eee}
+	</style>
+	<script type="text/javascript">
+	$(function(){
+		$("table tr:even").addClass("bgColor");
+		$("#btn").click(function(){
+			console.log($("input[type=checkbox]:not(:last):checked").parent().parent());
+			$("input[type=checkbox]:not(:last):checked").parent().parent().remove();
+
+		});
+
+		$("#checkbtn").click(function(){
+			console.log($(this).is(":checked"));
+			if($(this).is(":checked")){
+				$("input[type=checkbox]:not(:last)").each(function(){
+					// console.log($(this));
+					$(this).prop("checked",true);
+				});
+			}else{
+				$("input[type=checkbox]:not(:last)").each(function(){
+					// console.log($(this));
+					$(this).prop("checked",false);
+				});
+			}
+		})
+	});
+	</script>
+</head>
+<body>
+<table>
+	<tr>
+		<th>选项</th>
+		<th>编号</th>
+		<th>封面</th>
+		<th>购书人</th>
+		<th>性别</th>
+		<th>购书价</th>
+	</tr>
+	<tr>
+		<td class="check"><input type="checkbox" /></td>
+		<td>1001</td>
+		<td><img src="Image/arrow.png"></td>
+		<td>李小明</td>
+		<td>男</td>
+		<td>35.60元</td>
+	</tr>
+	<tr>
+		<td><input type="checkbox" /></td>
+		<td>1002</td>
+		<td><img src="Image/up.png"></td>
+		<td>刘明明</td>
+		<td>女</td>
+		<td>37.80元</td>
+	</tr>
+	<tr>
+		<td><input type="checkbox" /></td>
+		<td>1003</td>
+		<td><img src="Image/down.png"></td>
+		<td>张小星</td>
+		<td>女</td>
+		<td>45.60元</td>
+	</tr>
+	<tr>
+		<td colspan="6">
+			<input type="checkbox" id="checkbtn" />全选
+			<input type="button" value="删除" id="btn" />
+		</td>
+	</tr>
+</table>
+</body>
+</html>
