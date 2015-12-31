@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>映射方式绑定不同的事件</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+	<style type="text/css">
+		body{font-size: 13px;}
+		.clsTip{border:1px solid #ccc;background-color: #eee;margin-top: 15px;padding: 5px;width: 185px;display: none;}
+		.txt{border:#666 1px solid; padding: 3px;}
+	</style>
+	<script type="text/javascript">
+	$(function(){
+		$(".txt").bind({focus:function(){
+			$("#divTip").show().html("执行的focus事件");
+		},change:function(){
+			$("#divTip").show().html("执行的是change事件");
+		}
+		})
+	})
+	</script>
+</head>
+<body>
+<div><input type="text" class="txt" /></div>
+<div id="divTip" class="clsTip"></div>
+</body>
+</html>

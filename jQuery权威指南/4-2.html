@@ -1,0 +1,20 @@
+<html>
+<head>
+	<title>方法绑定事件</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+	<style type="text/css">
+	.btn{border:#666 1px solid;padding: 2px;width: 50px;filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#fff,EndColorStr=#ece9d8);}
+	</style>
+	<script type="text/javascript">
+		$(function(){
+			$("#btnBind").bind("click",function(){
+				$(this).attr("disabled","disabled");
+			})
+		})
+	</script>
+</head>
+<body>
+<input type="button" value="Button" id="btnBind" class="btn" />
+</body>
+</html>
