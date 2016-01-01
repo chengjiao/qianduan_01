@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>切换事件</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="jquery-1.11.3.js"></script>
+	<style type="text/css">
+		body{font-size: 13px;}
+		img{border: solid 1px #ccc;padding: 3px;display: block;}
+	</style>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("button").toggle(function(){
+    $("body").css("background-color","green");},
+    function(){
+    $("body").css("background-color","red");},
+    function(){
+    $("body").css("background-color","yellow");}
+  );
+});
+</script>
+</head>
+<body>
+<button>请点击这里，来切换不同的背景颜色</button>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>切换事件</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+	<style type="text/css">
+	body{font-size: 13px;}
+	.clsFrame{border:1px solid #666;width: 220px;}
+	.clsFrame .clsTitle{background-color: #eee;padding: 5px;font-weight: bold;}
+	.clsFrame .clsContent{padding: 5px;display: none;}
+	</style>
+	<script type="text/javascript">
+	$(function(){
+		$(".clsFrame").hover(function(){
+			$(".clsContent").show();
+		},function(){
+			$(".clsContent").hide();
+		})
+	})
+	</script>
+</head>
+<body>
+<div class="clsFrame">
+	<div class="clsTitle">jQuery 简介</div>
+	<div class="clsContent">&nbsp;&nbsp;jQuery是由美国人John Resig于2006年创建的一个开源项目，它的主旨是：以更少的代码，实现更多的功能。（Write less,do more.）</div>
+</div>
+</body>
+</html>
