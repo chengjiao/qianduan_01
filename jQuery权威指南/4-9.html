@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>文本框中的事件应用</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+	<style type="text/css">
+	.txtInit{border: 1px solid #666;}
+	.spnInit{float: right;margin-top: 8px;padding-left: 10px;}
+	/*元素丢失焦点时样式*/
+	.divBlur{background-color: #feeec2}
+	.txtBlur{border: #666 1px solid;padding: 2px;background-color: pink;}
+	.spnBlur{background-color: #eee;}
+
+	.divFocus{background-color: #edffd5;}
+	.spnSucc{background-color: #ececec;margin-top: 20px;}
+	</style>
+	
+</head>
+<body>
+<form id="form1" action="#">
+	<div id="email" class="divInit">邮箱：
+		<span id="spnTip" class="spnInit"></span>
+		<input id="txtEmail" type="text" class="txtInit" />
+	</div>
+</form>
+</body>
+</html>

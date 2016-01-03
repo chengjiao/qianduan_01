@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>其他事件</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+	<style type="text/css">
+	body{font-size: 13px;}
+	.txt{border:1px solid #666;padding: 3px;}
+	</style>
+	<script type="text/javascript">
+	$(function(){
+		var oTxt = $("#Text1");//获取文本框
+		oTxt.trigger("select");//自动选中文本框
+		oTxt.bind("btn_click",function(){//编写文本框自定义事件
+			var txt = $(this).val();//获取自身内容
+			$("#divTip").html(txt);//显示在页面中
+		});
+		oTxt.trigger("btn_click");//自动触发自定义事件
+	})
+	</script>
+</head>
+<body>
+姓名：<input type="text" value="淘过荣" id="Text1" class="txt" />
+	  <div id="divTip" style="padding-top:5px" ></div>
+</body>
+</html>

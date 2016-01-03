@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>其他事件</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+	<style type="text/css">
+	.btn{border:1px solid #666;padding: 2px;width: 160px;}
+	</style>
+	<script type="text/javascript">
+	$(function(){
+		function btn_click(){
+			this.value="010-1234567";
+		}
+		$("#Button1").bind("click",btn_click);
+	})
+	</script>
+</head>
+<body>
+<input id="Button1" type="button" value="点击查看联系方式" class="btn" />
+</body>
+</html>

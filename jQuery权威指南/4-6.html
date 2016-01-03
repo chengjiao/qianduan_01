@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>移除事件</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+	<style type="text/css">
+	body{font-size: 13px;}
+	.btn{border:#666 1px solid;padding: 2px;width: 80px;}
+	div{line-height: 1.8em;}
+	</style>
+	<script type="text/javascript">
+	$(function(){
+		function oClick(){
+			$("#divTip").append("<div>按钮二的单击事件</div>");
+		}
+		$("input:eq(0)").bind("click",function(){
+			$("#divTip").append("<div>按钮一的单击事件</div>")
+		});
+		$("input:eq(1)").bind("click",oClick);
+		$("input:eq(2)").bind("click",function(){
+			$("input").unbind();
+		});
+	})
+	</script>
+</head>
+<body>
+<div>
+	<input id="Button1" type="button" value="按钮一" class="btn" />
+	<input id="Button2" type="button" value="按钮二" class="btn" />
+	<input id="Button3" type="button" value="删除事件" class="btn" />
+</div>
+<div id="divTip" style="padding-top:10px"></div>
+</body>
+</html>
