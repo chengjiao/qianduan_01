@@ -75,26 +75,36 @@ body{
 }
 .wedding-left{
 	float: left;
-	padding-right: 5em;
+	/*padding-right: 5em;*/
 }
 .wedding-left h1{
 	font-size: 2.5em;
 	font-weight: 1000;
 }
 /*wedding-middle*/
-.wedding-meddle{
+.wedding-middle{
 	float: left;
-	width: 85%;
+	width: 65%;
+	text-align: center;
 }
-.wedding-meddle ul{
-	float: left;
+.wedding-middle ul{
+	/*text-align: center;
+	margin: 0 auto;
+	padding-left: 3em;*/
+	zoom:1;
+	display: inline-block;
+	*display: inline;
+	margin: 0 auto;
 }
 .wedding-middle ul li{
-	float: left;
+	/*zoom:1;
+	display: inline-block;
+	*display: inline;*/
 }
 .wedding-middle ul li{
 	list-style: none;
-	padding-right: 5em;
+	padding-right: 2em;
+	padding-left: 3em;
 	font-size: 15px;
 }
 .wedding-middle ul li a.li-home{
@@ -114,9 +124,12 @@ body{
 /*wedding-right*/
 .wedding-right{
 	float: right;
+	width: 15%;
+	margin-top: 1em;
 }
-..wedding-right a{
+.wedding-right a{
 	text-decoration: none;
+	/*padding-right: 3em;*/
 }
 .wedding-right .simpleCart_empty{
 	color: rgba(204,204,204,1);
