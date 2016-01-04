@@ -81,6 +81,11 @@ body{
 	font-size: 2.5em;
 	font-weight: 1000;
 }
+/*wedding-middle*/
+.wedding-meddle{
+	float: left;
+	width: 85%;
+}
 .wedding-meddle ul{
 	float: left;
 }
@@ -105,6 +110,25 @@ body{
 }
 .wedding-middle ul li a.li-another:hover{
 	color: #01A2DD;
+}
+/*wedding-right*/
+.wedding-right{
+	float: right;
+}
+..wedding-right a{
+	text-decoration: none;
+}
+.wedding-right .simpleCart_empty{
+	color: rgba(204,204,204,1);
+	font-size: 0.85em;
+	text-decoration: none;
+}
+.glyphicon-shopping-cart:before{
+	margin-left: 5px;
+	font-size: 1.2em;
+}
+..glyphicon-shopping-cart:before{
+	content: "\e116";
 }
 .row{
 	position: absolute;
