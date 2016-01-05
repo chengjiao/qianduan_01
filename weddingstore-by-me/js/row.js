@@ -8,4 +8,10 @@ $.fn.row = function(e){
 	var t = {
 		intervar : 250
 	};
+
+/*	$(".figure-img").bind("mouseover",function(){
+		$(this).next(".figure-bg").show();
+	}).bind("mouseleave",function(){
+		$(this).next(".figure-bg").hide();
+	})*/
 }

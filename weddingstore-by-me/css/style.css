@@ -1,6 +1,7 @@
 *{
 	margin: 0px;
 	padding: 0px;
+	box-sizing:border-box;
 }
 body{
 	font-size: 14px;
@@ -121,6 +122,8 @@ body{
 .wedding-middle ul li a.li-another:hover{
 	color: #01A2DD;
 }
+.row{text-align: left;}
+.row dl dd a:hover{color: #FF6861;}
 /*wedding-right*/
 .wedding-right{
 	float: right;
@@ -203,6 +206,7 @@ body{
 /*pictures部分*/
 .pic-1{
 	width: 33.333333%;
+	box-sizing:border-box;
 }
 .picture-left{
 	float: left;
@@ -213,9 +217,6 @@ body{
 .picture-right{
 	float: right;
 }
-figure img{
-	width: 100%;
-}
 figure p{
 	padding-bottom: 1.1em;
     padding-top: 0.8em;
@@ -224,10 +225,72 @@ figure p{
 .pic-middle img{
 	width: 100%;
 }
-.pic-middle p{
+.left-p p{
 	font-size: 2em;
 	padding-bottom: 1.1em;
     padding-top: 0.8em;
+}
+.pic-left-one figure{position: relative;}
+figure img{position: relative;display: block;width: 100%;}
+.pic-left-one figure figcaption{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+	text-align: center;
+}
+/*figcaption 动态出现的部分*/
+/*.pic-left-one figure figcaption{
+	color:#fff;padding: 2em;text-align: center;}
+figcaption h2{padding-top: 2em;}
+figcaption p{font-size: 1.25em;}*/
+figure.effect-bubba {background-color: #00a0dc;}
+figure.effect-bubba:hover img{opacity: 0.3;}
+figure.effect-bubba figcaption::before,
+figure.effect-bubba figcaption::after{
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
+	content: "";
+	opacity: 0;
+	transition:opacity0.35s,transform 0.35s;
+}
+figure.effect-bubba figcaption:before{
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	transform:scale(0,1);
+}
+figure.effect-bubba figcaption:after{
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	transform:scale(1,0);
+}
+figure.effect-bubba h2{
+	padding-top: 2em;
+	transition:transform 0.35s;
+	transform:translated(0,-20px,0);
+	opacity: 0;
+}
+figure.effect-bubba p{
+	padding:15px 1em;
+	opacity: 0;
+	transition:opacity 0.35s,transform 0.35s;
+	transform:translated(0,20px,0);
+	font-size: 1.25em;
+}
+figure.effect-bubba:hover figcaption:before,
+figure.effect-bubba:hover figcaption:after{
+	opacity: 1;
+	transform:scale(1);
+}
+figure.effect-bubba:hover h2,
+figure.effect-bubba:hover p{
+	opacity: 1;
+	transform:translated(0,0,0);
 }
 .pic-left{
 	margin-left: 10px;
