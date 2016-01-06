@@ -322,6 +322,8 @@ figure.effect-bubba:hover p{
 	width: 25%;
 	float: left;
 	text-align: center;	
+	position: relative;
+	border: 2px solid #fff;
 }
 .fea-1 a{
 	text-decoration: none;
@@ -332,6 +334,34 @@ figure.effect-bubba:hover p{
 .fea-1 a .fea-2 img{
 	padding:0em 2em 1em 2em;
 	vertical-align: middle;
+}
+/*动画*/
+.fea-1-sp{
+	position: absolute;
+	width: 30%;
+	height: 35px;
+	line-height: 35px;
+	background-color: #EFEFEF;
+	text-align: center;
+	display: none;
+}
+.fea-1-sp1{	
+	left: 0;
+	top: 0;
+}
+.fea-1-sp2{
+	top: 0;
+	right: 0;
+}
+.fea-1 .fea-1-sp a.fea-1-aa:hover{
+	text-decoration: underline;
+	color: #A5A5A5;
+}
+.feature-bottom .fea-1:hover{
+	border: 2px solid #F4F4F4;
+}
+.fea-1:hover .fea-1-sp{
+	display: block;
 }
 .arrival-info{
 	padding-top: 1em;
