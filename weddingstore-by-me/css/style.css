@@ -47,7 +47,7 @@ body{
 #header{
 	background-color: #00A0DC;
 }
-.container ul{
+#header .container ul{
 	line-height: 3em;
 }
 .top-sec ul li{
@@ -87,6 +87,7 @@ body{
 	float: left;
 	width: 65%;
 	text-align: center;
+	padding-top: 1em;
 }
 .wedding-middle ul{
 	/*text-align: center;
@@ -157,6 +158,7 @@ body{
 	border:solid 1px #ccc;
 	box-sizing:border-box;
 	display: none;
+	line-height: 2em;
 }
 .row dl{
 	float: left;
@@ -358,36 +360,43 @@ figure.effect-bubba:hover p{
 	color: #A5A5A5;
 }
 .feature-bottom .fea-1:hover{
-	border: 2px solid #F4F4F4;
+	/*border: 2px solid #F4F4F4;*/
 }
 .fea-1:hover .fea-1-sp{
 	display: block;
 }
-.arrival-info{
-	padding-top: 1em;
-}
-.arrival-info h4{
-	color: #caccce;
-	font-size: 0.9em;
-	text-transform: uppercase;
-}
-.arrival-info p{
-	color: #000;
-	font-size: 1em;
-	font-weight: 600;
-	margin: 10px 0 5px;
-}
-.pricl{
-	color: #adadad;
-	font-size: 0.95em;
-}
-.disc{
-	color: rgba(7,152,40,0.69);
-	font-size: 0.85em;
-}
 /*arrivals部分*/
+.nbs-flexisel-item{
+	width: 20%;
+	float: left;
+	margin: 0px;
+	/*padding: 10px;*/
+	cursor: pointer;
+	position: relative;
+	border:1px solid #fff;
+}
+
+.nbs-flexisel-item:hover{
+	border: 1px solid #F0EFEF;
+}
+.nbs-flexisel-item:hover .fea-1-sp{
+	display: block;
+}
+.nbs-flexisel-item > a img {	
+	cursor:auto;
+	position: relative;
+	width: 90%;
+  	/*margin: 0 5%;*/
+}
+.nbs-flexisel-item .fea-1-sp .fea-1-aa{
+	color: #A5A5A5;
+	text-decoration: none;
+}
+.nbs-flexisel-item .fea-1-sp .fea-1-aa:hover{
+	text-decoration: underline;
+}
 .arrivals{
-	padding-bottom: 2em;
+	padding: 2em 0;
 }
 .arrivals-head{
 	padding-bottom: 2em;
@@ -397,6 +406,67 @@ figure.effect-bubba:hover p{
 	color: #00A0DC;
 	font-size: 2.3em;
 	font-weight: 700;
+}
+.arrivals-bottom{
+	position: relative;
+}
+.arrival-info{
+	margin-top:1em;
+	margin-bottom: 1em;
+}
+.arrival-info h4{
+	color:#caccce;
+	font-size:0.9em;
+	font-family: 'JosefinSans-Bold';
+	text-transform:uppercase;
+}
+.arrival-info p{
+	color:#000;
+	font-size:1em;
+	font-weight:600;
+	padding: 10px 0 5px;
+}
+span.pric1{
+	color:#ADADAD;
+	font-size:0.95em;
+}
+span.disc{
+	color: rgba(7, 152, 40, 0.69);
+  	font-size: 0.85em;
+}
+.nbs-flexisel-container {
+	position: relative;
+	max-width: 100%;
+}
+#flexiselDemo1 {
+	display: none;
+}
+.nbs-flexisel-ul {
+	position: relative;
+	width: 9999px;
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	text-align: center;
+}
+.nbs-flexisel-inner {
+	overflow: hidden;
+}
+.nbs-flexisel-nav-left, .nbs-flexisel-nav-right {
+	width: 45px;
+	height: 45px;
+	position: absolute;
+	cursor: pointer;
+	z-index: 100;
+	margin-top:-2em;
+}
+.nbs-flexisel-nav-left {
+	left: -50px;
+	background: url(../images/img-sprite-left-right.png) no-repeat 0px 0px;
+}
+.nbs-flexisel-nav-right {
+	right: -47px;
+	background: url(../images/img-sprite-left-right.png) no-repeat -54px 0px;
 }
 /*shopping部分*/
 .shopping{
@@ -426,25 +496,7 @@ figure.effect-bubba:hover p{
 	font-weight: 200;
 	padding-top: 0.5em;
 }
-/*arrivals部分*/
-.nbs-flexisel-item{
-	width: 25%;
-	list-style-type: none;
-	position: relative;
-	text-align: center;
-	border:1px solid black;
-}
-.nbs-flexisel-item a img{
-	width: 90%;
-}
-.nbs-flexisel-item .arrival-info{
-	position: absolute;
-	left: 0;
-	bottom: 0;
-}
-.nbs-flexisel-item .arrival-info h4,p,span{
-	margin: 0 auto;
-}
+
 /*footer部分*/
 .footer{
 	padding-top: 3em;

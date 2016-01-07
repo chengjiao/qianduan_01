@@ -377,7 +377,7 @@ span.pric1{
 }
 span.disc{
 	color: rgba(7, 152, 40, 0.69);
-  font-size: 0.85em;
+  	font-size: 0.85em;
 }
 #flexiselDemo1, #flexiselDemo2, #flexiselDemo3 {
 	display: none;
