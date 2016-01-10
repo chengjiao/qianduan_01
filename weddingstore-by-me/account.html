@@ -4,6 +4,9 @@
 	<meta charset="utf-8" />
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="fonts/JosefinSans-Regular.ttf">
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/row.js"></script>
+	<script>$(document).ready(function(){$(".row").row()})</script>
 </head>
 <body>
 <div id="header">
@@ -126,6 +129,70 @@
 			<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
 		</div>
 		<div class="clear"></div>
+	</div>
+</div>
+<div class="contain">
+	<div class="container">
+		<ol class="breadcrumb">
+			<li><a href="index.html">Home</a></li>
+			<li class="active">/&nbsp;&nbsp;Account</li>
+		</ol>
+		<div class="registration">
+			<div class="register_left">
+				<h2>New User?&nbsp;<span>Create An Account</span></h2>
+				<div class="register_form">
+					<form id="register_form" method="post">
+					<div>
+						<input type="text" placeholder="First Name:" />
+					</div>
+					<div>
+						<input type="text" placeholder="Last Name:" />
+					</div>
+					<div>
+						<input type="text" placeholder="Email Address:" />
+					</div>
+					<div>
+						<input type="text" placeholder="Mobile" />
+					</div>
+					<div class="radio">
+							<input type="radio" checked="checked" value="Male" name="radio" />Male
+							<input type="radio" value="Female" name="radio" />Female
+						</ul>
+					</div>
+					<div>
+						<input type="password" placeholder="Password" />
+					</div>
+					<div>
+						<input type="password" placeholder="Retype Password" />
+					</div>
+					<div>
+						<input type="button" value="create an account" />
+					</div>
+					<div>
+						<input type="checkbox" />i agree to mobilya.com &nbsp;<a href="#" class="check-a">Terms of Service</a>
+					</div>
+				</form>
+				</div>
+			</div>
+			<div class="register_right">
+				<h2>Existiing User</h2>
+				<div class="register_form">
+					<div>
+						<input type="text" placeholder="Email:" />
+					</div>
+					<div>
+						<input type="text" placeholder="Password:" />
+					</div>
+					<div>
+						<input type="button" value="sign in" />
+					</div>
+					<div>
+						<a href="#" class="register-right-a">Forget Your Password</a>
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
 	</div>
 </div>
 <div class="shopping">

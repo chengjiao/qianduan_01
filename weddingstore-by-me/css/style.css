@@ -541,7 +541,123 @@ span.disc{
 	color: #999;
 }
 /*account.html-start*/
-.list1{
+.breadcrumb{
+	list-style-type: none;
 	background-color: #F5F5F5;
+	line-height: 2.5em;
+	margin-bottom: 2em;
+}
+.breadcrumb li{
+	display: inline-block;
+	padding-left: 15px;
+}
+.breadcrumb li a{
+	color: #1B242F;
+	text-decoration: none;
+}
+.breadcrumb li a:hover{
+	color: #E74C3C;
+	text-decoration: underline;
+}
+.breadcrumb .active{
+	color: #999999;
+}
+.registration{
+	margin-bottom: 4em;
+}
+.registration .register_left{
+	width: 50%;
+	float: left;
+}
+.registration .register_left h2{
+	font-size: 2em;
+}
+.registration .register_left h2 span{
+	color: #777777;
+}
+.registration .register_left #register_form{
+	margin-top: 1em;
+}
+.registration .register_left #register_form div{
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+}
+.registration .register_left #register_form div input{
+	width: 90%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+}
+.registration .register_left #register_form div input[type="radio"]{
+	width: 5%;
+}
+.registration .register_left #register_form div input[type="button"]{
+	font-size: 0.75em;
+	display: inline-block;
+	background-color: #00a0dc;
+	padding:0.8em 2em;
+	color: #fff;
+	text-decoration: none;
+	border: none;
+	text-transform: uppercase;
+	font-weight: 500;
+	width: 40%;
+}
+.registration .register_left #register_form div input[type="button"]:hover{
+	background-color: #323232;
+	color: #E9E9E9;
+}
+.registration .register_left #register_form div input[type="checkbox"]{
+	width: 5%;
+}
+.registration .register_left #register_form div .check-a{
+	color: #999999;
+}
+.registration .register_left #register_form div .check-a:hover{
+	color: #323232;
+	text-decoration: none;
+}
+.registration .register_right{
+	float: left;
+	width: 50%;
+	padding-left: 5%;
+}
+.registration .register_right h2{
+	font-size: 2em;
+}
+.registration .register_right .register_form{
+	margin-top: 1em;
+}
+.registration .register_right .register_form div{
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+}
+.registration .register_right .register_form div input{
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+}
+.registration .register_right .register_form div input[type="button"]{
+	font-size: 0.75em;
+	display: inline-block;
+	background-color: #00a0dc;
+	padding:0.8em 2em;
+	color: #fff;
+	text-decoration: none;
+	border: none;
+	text-transform: uppercase;
+	font-weight: 500;
+	width: 27%;
+}
+.registration .register_right .register_form div input[type="button"]:hover{
+	background-color: #323232;
+	color: #E9E9E9;
+}
+.registration .register_right .register_form div .register-right-a{
+	color: #999999;
+}
+.registration .register_right .register_form div .register-right-a:hover{
+	text-decoration: none;
 }
 /*account.html-end*/
