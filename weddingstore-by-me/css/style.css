@@ -661,3 +661,196 @@ span.disc{
 	text-decoration: none;
 }
 /*account.html-end*/
+/*checkout-start*/
+.contain-check {
+	padding-bottom: 4em;
+}
+.contain-check .contain-check-left{
+	width: 70%;
+	float: left;
+	margin-top: 1em;
+	padding-left: 30px;
+}
+.contain-check .contain-check-left h3{
+	font-size: 1.6em;
+	color: #000;
+	margin: 0 0 1em;
+}
+.contain-check .contain-check-left .in-check ul{
+	list-style-type: none;
+}
+.contain-check .contain-check-left .in-check ul li{
+	width: 20%;
+	display: inline-block;
+}
+.contain-check .contain-check-left .in-check .unit{
+	background-color: #333333;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	text-align: left;
+}
+.contain-check .contain-check-left .in-check .unit li{
+	color: #FFFFFF;
+	font-size: 1.3em;
+	padding-left: 10px;
+}
+.contain-check .contain-check-left .in-check .cart-header,.cart-header1{
+	background-color: #F8F8F8;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	position: relative;
+	border-bottom: #FF5D56 1px solid;
+}
+.contain-check .contain-check-left .in-check .cart-header .close1{
+	background: url("../images/close.png") no-repeat 0px 0px;
+	cursor: pointer;
+	width: 28px;
+	height: 28px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.contain-check .contain-check-left .in-check .cart-header a img{
+	width: 100%;
+}
+.contain-check .contain-check-left .in-check .cart-header li{
+	padding-left: 1em;
+}
+.contain-check .contain-check-left .in-check .cart-header li span{
+	line-height: 4em;
+	font-size: 1.2em;
+}
+.contain-check .contain-check-left .in-check .cart-header li .add-to-cart{
+	line-height: 4em;
+	padding: 10px;
+	background-color: #00A0DC;
+	color: #FFFFFF;
+	text-decoration: none;
+}	
+.contain-check .contain-check-left .in-check .cart-header li .add-to-cart:hover{
+	background-color: #565656;
+}
+/*cart-header1*/
+.contain-check .contain-check-left .in-check .cart-header1 .close2{
+	background: url("../images/close.png") no-repeat 0px 0px;
+	cursor: pointer;
+	width: 28px;
+	height: 28px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.contain-check .contain-check-left .in-check .cart-header1 a img{
+	width: 100%;
+}
+.contain-check .contain-check-left .in-check .cart-header1 li{
+	padding-left: 1em;
+}
+.contain-check .contain-check-left .in-check .cart-header1 li span{
+	line-height: 4em;
+	font-size: 1.2em;
+}
+.contain-check .contain-check-left .in-check .cart-header1 li .add-to-cart{
+	line-height: 4em;
+	padding: 10px;
+	background-color: #00A0DC;
+	color: #FFFFFF;
+	text-decoration: none;
+}	
+.contain-check .contain-check-left .in-check .cart-header1 li .add-to-cart:hover{
+	background-color: #565656;
+}
+.contain-check .contain-check-right{
+	padding-top: 6em;
+	padding-left: 3em;
+	float: left;
+	width: 30%;
+}
+.conti-place .continue,.place{
+	text-align: center;
+}
+.contain-check .contain-check-right .conti-place .continue .conti-a{
+	background-color: #00A0DC;
+	padding: 10px;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 1.2em;
+	text-align: center;
+	border-radius: 15px;
+
+}
+.contain-check .contain-check-right .conti-place .continue .conti-a:hover{
+	background-color: #333333;
+}
+.conti-place .continue-main{
+	text-align: left;
+}
+.contain-check .contain-check-right .conti-place .continue .continue-main{
+	margin-top: 3em;
+}
+.contain-check .contain-check-right .conti-place .continue .continue-main h5{
+	color: #333;
+	font-size: 1em;
+	margin-bottom: 1em;
+}
+.continue .continue-main span{
+	width: 50%;
+	float: left;
+	padding: 1px 0;
+	color: #000;
+	line-height: 1.2em;
+}
+.contain-check .contain-check-right .conti-place .place{
+	margin-top: 2em;
+}
+.conti-place .place .place-a{
+	background-color: #333333;
+	padding: 10px 20px 10px 20px;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 1.2em;
+}
+.conti-place .place .place-a:hover{
+	background-color: #00A1DD;
+	color: #fff;
+}
+.contain-check .contain-check-right .conti-place .place .continue-main{
+	margin-top: 2em;
+}
+.continue-main .apply-a{
+	background-color: #848C90;
+	color: #333;
+	padding: 5px 10px;
+	text-decoration: none;
+}
+.continue-main .apply-a:hover{
+	background-color: #20749F;
+	color: #FFFFF1;
+	text-decoration: underline;
+}
+.continue-main h3{
+	color: #333;
+	font-size: 1.4em;
+	margin-bottom: 0.7em;
+}
+.continue-main h4{
+	font-size: 1.2em;
+	font-weight: 600;
+	color: #9c9c9c;
+	display: inline-block;
+	margin-right: 6em;
+}
+.continue-main p{
+	font-size: 1.2em;
+	font-weight: 400;
+	margin-top: 0.7em;
+	color: #727272;
+}
+.continue-main .lig-a{
+	color: #000;
+	text-decoration: none;
+}
+.continue-main .lig-a:hover{
+	text-decoration: underline;
+}
+/*checkout-end*/
