@@ -872,10 +872,23 @@ span.disc{
 	width: 65%;
 	float: left;
 }
+.contact-mian-left .findus{
+	width: 80%;
+}
+.map .map-a{
+	color:#666;
+	text-align: left;
+	font-size: 0.85em;
+	text-decoration: none;
+	line-height: 1em;
+}
+.map .map-a:hover{
+	text-decoration: underline;
+}
 .company-info{
 	padding-top: 1em;
 }
-.company-info h4{
+.company-info h4,.findus h4{
 	padding-top: 1em;
 	padding-bottom: 1em;
 	font-size: 1.5em;
