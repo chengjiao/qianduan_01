@@ -1,0 +1,283 @@
+diff a/weddingstore-by-me/css/style.css b/weddingstore-by-me/css/style.css	(rejected hunks)
+@@ -660,276 +660,280 @@
+  .registration .register_right .register_form div .register-right-a:hover{
+  	text-decoration: none;
+  }
+ -/*account.html-end*/
+++<<<<<<< HEAD
+ +/*account.html-end*/
+ +/*checkout-start*/
+ +.contain-check {
+ +	padding-bottom: 4em;
+ +}
+ +.contain-check .contain-check-left{
+ +	width: 70%;
+ +	float: left;
+ +	margin-top: 1em;
+ +	padding-left: 30px;
+ +}
+ +.contain-check .contain-check-left h3{
+ +	font-size: 1.6em;
+ +	color: #000;
+ +	margin: 0 0 1em;
+ +}
+ +.contain-check .contain-check-left .in-check ul{
+ +	list-style-type: none;
+ +}
+ +.contain-check .contain-check-left .in-check ul li{
+ +	width: 20%;
+ +	display: inline-block;
+ +}
+ +.contain-check .contain-check-left .in-check .unit{
+ +	background-color: #333333;
+ +	padding-top: 1em;
+ +	padding-bottom: 1em;
+ +	text-align: left;
+ +}
+ +.contain-check .contain-check-left .in-check .unit li{
+ +	color: #FFFFFF;
+ +	font-size: 1.3em;
+ +	padding-left: 10px;
+ +}
+ +.contain-check .contain-check-left .in-check .cart-header,.cart-header1{
+ +	background-color: #F8F8F8;
+ +	padding-top: 1em;
+ +	padding-bottom: 1em;
+ +	position: relative;
+ +	border-bottom: #FF5D56 1px solid;
+ +}
+ +.contain-check .contain-check-left .in-check .cart-header .close1{
+ +	background: url("../images/close.png") no-repeat 0px 0px;
+ +	cursor: pointer;
+ +	width: 28px;
+ +	height: 28px;
+ +	position: absolute;
+ +	right: 0;
+ +	top: 0;
+ +}
+ +.contain-check .contain-check-left .in-check .cart-header a img{
+ +	width: 100%;
+ +}
+ +.contain-check .contain-check-left .in-check .cart-header li{
+ +	padding-left: 1em;
+ +}
+ +.contain-check .contain-check-left .in-check .cart-header li span{
+ +	line-height: 4em;
+ +	font-size: 1.2em;
+ +}
+ +.contain-check .contain-check-left .in-check .cart-header li .add-to-cart{
+ +	line-height: 4em;
+ +	padding: 10px;
+ +	background-color: #00A0DC;
+ +	color: #FFFFFF;
+ +	text-decoration: none;
+ +}	
+ +.contain-check .contain-check-left .in-check .cart-header li .add-to-cart:hover{
+ +	background-color: #565656;
+ +}
+ +/*cart-header1*/
+ +.contain-check .contain-check-left .in-check .cart-header1 .close2{
+ +	background: url("../images/close.png") no-repeat 0px 0px;
+ +	cursor: pointer;
+ +	width: 28px;
+ +	height: 28px;
+ +	position: absolute;
+ +	right: 0;
+ +	top: 0;
+ +}
+ +.contain-check .contain-check-left .in-check .cart-header1 a img{
+ +	width: 100%;
+ +}
+ +.contain-check .contain-check-left .in-check .cart-header1 li{
+ +	padding-left: 1em;
+ +}
+ +.contain-check .contain-check-left .in-check .cart-header1 li span{
+ +	line-height: 4em;
+ +	font-size: 1.2em;
+ +}
+ +.contain-check .contain-check-left .in-check .cart-header1 li .add-to-cart{
+ +	line-height: 4em;
+ +	padding: 10px;
+ +	background-color: #00A0DC;
+ +	color: #FFFFFF;
+ +	text-decoration: none;
+ +}	
+ +.contain-check .contain-check-left .in-check .cart-header1 li .add-to-cart:hover{
+ +	background-color: #565656;
+ +}
+ +.contain-check .contain-check-right{
+ +	padding-top: 6em;
+ +	padding-left: 3em;
+ +	float: left;
+ +	width: 30%;
+ +}
+ +.conti-place .continue,.place{
+ +	text-align: center;
+ +}
+ +.contain-check .contain-check-right .conti-place .continue .conti-a{
+ +	background-color: #00A0DC;
+ +	padding: 10px;
+ +	color: #FFFFFF;
+ +	text-decoration: none;
+ +	font-size: 1.2em;
+ +	text-align: center;
+ +	border-radius: 15px;
+ +
+ +}
+ +.contain-check .contain-check-right .conti-place .continue .conti-a:hover{
+ +	background-color: #333333;
+ +}
+ +.conti-place .continue-main{
+ +	text-align: left;
+ +}
+ +.contain-check .contain-check-right .conti-place .continue .continue-main{
+ +	margin-top: 3em;
+ +}
+ +.contain-check .contain-check-right .conti-place .continue .continue-main h5{
+ +	color: #333;
+ +	font-size: 1em;
+ +	margin-bottom: 1em;
+ +}
+ +.continue .continue-main span{
+ +	width: 50%;
+ +	float: left;
+ +	padding: 1px 0;
+ +	color: #000;
+ +	line-height: 1.2em;
+ +}
+ +.contain-check .contain-check-right .conti-place .place{
+ +	margin-top: 2em;
+ +}
+ +.conti-place .place .place-a{
+ +	background-color: #333333;
+ +	padding: 10px 20px 10px 20px;
+ +	color: #FFFFFF;
+ +	text-decoration: none;
+ +	font-size: 1.2em;
+ +}
+ +.conti-place .place .place-a:hover{
+ +	background-color: #00A1DD;
+ +	color: #fff;
+ +}
+ +.contain-check .contain-check-right .conti-place .place .continue-main{
+ +	margin-top: 2em;
+ +}
+ +.continue-main .apply-a{
+ +	background-color: #848C90;
+ +	color: #333;
+ +	padding: 5px 10px;
+ +	text-decoration: none;
+ +}
+ +.continue-main .apply-a:hover{
+ +	background-color: #20749F;
+ +	color: #FFFFF1;
+ +	text-decoration: underline;
+ +}
+ +.continue-main h3{
+ +	color: #333;
+ +	font-size: 1.4em;
+ +	margin-bottom: 0.7em;
+ +}
+ +.continue-main h4{
+ +	font-size: 1.2em;
+ +	font-weight: 600;
+ +	color: #9c9c9c;
+ +	display: inline-block;
+ +	margin-right: 6em;
+ +}
+ +.continue-main p{
+ +	font-size: 1.2em;
+ +	font-weight: 400;
+ +	margin-top: 0.7em;
+ +	color: #727272;
+ +}
+ +.continue-main .lig-a{
+ +	color: #000;
+ +	text-decoration: none;
+ +}
+ +.continue-main .lig-a:hover{
+ +	text-decoration: underline;
+ +}
+ +/*checkout-end*/
+ +/*contact-start*/
+ +.contact-mian{
+ +	padding-bottom: 4em;
+ +}
+ +.contact-head h2{
+ +	font-size: 2.2em;
+ +	color: #333;
+ +	text-align: center;
+ +	padding-bottom: 1em;
+ +}
+ +.contact-mian-left{
+ +	width: 35%;
+ +	float: left;
+ +}
+ +.contact-mian-right{
+ +	width: 65%;
+ +	float: left;
+ +}
+ +.company-info{
+ +	padding-top: 1em;
+ +}
+ +.company-info h4{
+ +	padding-top: 1em;
+ +	padding-bottom: 1em;
+ +	font-size: 1.5em;
+ +	font-weight: 500;
+ +	color: #00A0DC;
+ +}
+ +.company-info p{
+ +	font-size: 1em;
+ +	color: rgba(85,81,81,0.84);
+ +	line-height: 1.8em;
+ +}
+ +.company-info p a{
+ +	color: #18242F;
+ +	text-decoration: none;
+ +}
+ +.company-info p a:hover{
+ +	color: #E74C3C;
+ +	text-decoration: underline;
+ +}
+ +.sapn_2_of_3 form span{
+ +	display: block;
+ +	font-size: 0.9em;
+ +	padding-bottom: 5px;
+ +	color: #012231;
+ +	text-transform: uppercase;
+ +}
+ +.sapn_2_of_3 form input[type="text"],.sapn_2_of_3 form textarea{
+ +	padding: 10px;
+ +	display: block;
+ +	width: 98%;
+ +	color: #464646;
+ +	font-size: 1.1em;
+ +	border:1px solid rgba(85,85,85,0.19);
+ +}
+ +.sapn_2_of_3 form input[type="submit"]{
+ +	background-color: #00A0DC;
+ +	color: #fff;
+ +	padding: 12px 30px;
+ +	font-size: 1.1em;
+ +	text-transform: uppercase;
+ +	display: block;
+ +	cursor: pointer;
+ +	border:2px solid #00A0DC;
+ +}
+ +.sapn_2_of_3 form input[type="submit"]:hover{
+ +	background-color: #fff;
+ +	color: #00A1DD;
+ +}
+ +.sapn_2_of_3 div{
+ +	padding: 5px 0;
+ +}
+ +.sapn_2_of_3 textarea{
+ +	resize:none;
+ +	height: 120px;
+ +}
+- /*contact-end*/
+++/*contact-end*/
+++=======
+++/*account.html-end*/
+++>>>>>>> parent of 189c824... 1-11 checkout.html

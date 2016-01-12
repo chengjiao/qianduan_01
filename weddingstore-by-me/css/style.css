@@ -854,3 +854,81 @@ span.disc{
 	text-decoration: underline;
 }
 /*checkout-end*/
+/*contact-start*/
+.contact-mian{
+	padding-bottom: 4em;
+}
+.contact-head h2{
+	font-size: 2.2em;
+	color: #333;
+	text-align: center;
+	padding-bottom: 1em;
+}
+.contact-mian-left{
+	width: 35%;
+	float: left;
+}
+.contact-mian-right{
+	width: 65%;
+	float: left;
+}
+.company-info{
+	padding-top: 1em;
+}
+.company-info h4{
+	padding-top: 1em;
+	padding-bottom: 1em;
+	font-size: 1.5em;
+	font-weight: 500;
+	color: #00A0DC;
+}
+.company-info p{
+	font-size: 1em;
+	color: rgba(85,81,81,0.84);
+	line-height: 1.8em;
+}
+.company-info p a{
+	color: #18242F;
+	text-decoration: none;
+}
+.company-info p a:hover{
+	color: #E74C3C;
+	text-decoration: underline;
+}
+.sapn_2_of_3 form span{
+	display: block;
+	font-size: 0.9em;
+	padding-bottom: 5px;
+	color: #012231;
+	text-transform: uppercase;
+}
+.sapn_2_of_3 form input[type="text"],.sapn_2_of_3 form textarea{
+	padding: 10px;
+	display: block;
+	width: 98%;
+	color: #464646;
+	font-size: 1.1em;
+	border:1px solid rgba(85,85,85,0.19);
+}
+.sapn_2_of_3 form input[type="submit"]{
+	background-color: #00A0DC;
+	color: #fff;
+	padding: 12px 30px;
+	font-size: 1.1em;
+	text-transform: uppercase;
+	display: block;
+	cursor: pointer;
+	border:2px solid #00A0DC;
+}
+.sapn_2_of_3 form input[type="submit"]:hover{
+	background-color: #fff;
+	color: #00A1DD;
+}
+.sapn_2_of_3 div{
+	padding: 5px 0;
+}
+.sapn_2_of_3 textarea{
+	resize:none;
+	height: 120px;
+}
+/*contact-end*/
