@@ -945,3 +945,62 @@ span.disc{
 	height: 120px;
 }
 /*contact-end*/
+/*login-start*/
+.login-mian{
+	padding-bottom: 3em;
+}
+.login-mian h2{
+	font-size: 2em;
+	font-weight: 700;
+	color: #000;
+	padding-bottom: 0.5em;
+}
+.login-mian p{
+	color: #A7A7A7;
+	line-height: 1.6em;
+	font-size: 1.2em;
+}
+.login-mian p a{
+	color: #1A1818;
+
+}
+.login-mian form{
+	padding-top: 1em;
+}
+.login-mian form div{
+	width: 50%;
+	padding-bottom: 0.5em;
+}
+.login-mian form div label{
+	margin-bottom: 1em;
+	font-size: 1.5em;
+	color: #5D595E;
+}
+.login-mian input[type="text"],input[type="password"]{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 98%;
+	border:1px solid #D6D6D6;
+}
+.login-btn{
+	margin-top: 1em;
+}
+.login-mian .login-btn input{
+	padding: 10px 20px;
+	background-color: #00A0DC;
+	color: #FFFFFF;
+	border:0px solid #00A0DC;
+	margin-right: 30px;
+}
+.login-mian .login-btn a{
+	padding: 10px 20px;
+	background-color: #00A0DC;
+	color: #FFFFFF;
+	border:0px solid #00A0DC;
+	text-decoration: none;
+}
+.login-mian .login-btn a:hover{
+	background-color: #CBCDCF;
+	color: #FFFFFF;
+}
+/*login-end*/
