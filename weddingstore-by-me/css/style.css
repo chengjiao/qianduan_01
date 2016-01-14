@@ -1004,3 +1004,69 @@ span.disc{
 	color: #FFFFFF;
 }
 /*login-end*/
+/*Product-start*/
+.product-mian-head{
+	text-align: center;
+	font-size: 2em;
+	font-weight: 700;
+	padding-bottom: 2em;
+}
+.product-bottom-left{
+	float: left;
+	width: 25%;
+}
+.product-bottom-right{
+	float: left;
+	width: 75%;
+	position: relative;
+}
+.product-bottom-right li{
+	border:2px solid #fff;
+	padding: 30px 20px;
+	margin-bottom: 2em;
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 30%;
+}
+.product-bottom-right img{
+	width: 100%;
+	padding:1em 2.5em 0;
+}
+.product-bottom-right li:hover{
+	border:2px solid #F5F5F5;
+}
+.product-bottom-right .bottom-p1{
+	color: #D3CCD7;
+	font-size: 1.3em;
+}
+.product-bottom-right .bottom-p2{
+	color: #D3CCD7;
+	font-size: 0.9em;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.product-bottom-right .bottom-p3{
+	color: #000000;
+	font-size: 1.3em;
+	font-weight: 700;
+}
+.product-bottom-right input[type="text"]{
+	padding: 5px;
+	border:1px solid #A9A9A9;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 70%;
+}
+.product-bottom-right input[type="button"]{
+	padding: 10px 30px;
+	color: #fff;
+	background-color: #00A0DC;
+	border-radius: 10px;
+	border:#00A0DC;
+}
+.product-bottom-right input[type="button"]:hover{
+	background-color: #323232;
+	color: #fff;
+	border:#323232;
+}
+/*Product-end*/
