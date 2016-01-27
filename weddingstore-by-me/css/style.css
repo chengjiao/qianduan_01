@@ -1070,3 +1070,24 @@ span.disc{
 	border:#323232;
 }
 /*Product-end*/
+/*typo-start*/
+.Typogra{
+	font-size: 2.2em;
+	font-family: 'JosefinSans-Bold';
+	color: #333;
+	text-align: center;
+	margin-bottom: 1em;
+}
+.headings{
+	font-family: 'Lato', sans-serif;
+}
+.headings h3{
+	color: #333;
+	font-size: 2em;
+	margin-bottom: 1em;
+}
+.table tbody tr{
+	padding-top: 16px;
+	border:1px solid #DDDDDD;
+}
+/*typo-end*/
