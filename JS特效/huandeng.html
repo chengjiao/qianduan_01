@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8"/>
+	<style type="text/css">
+	img{
+		display: none;
+		width: 100px;
+		height: 100px;
+	}
+	input:checked+img{
+		display: block;
+	}
+	input{
+		position: absolute;
+		left: -9999px;
+	}
+	label{
+		cursor: pointer;
+	}
+	</style>
+</head>
+<body>
+<div id="cont">
+	<input id="img1" name="img" type="radio" checked="checked" />
+	<img src="C:/Users/CJ/Documents/qianduan_01/1017/images/blog-2.png">
+	<input id="img2" name="img" type="radio" />
+	<img src="C:/Users/CJ/Documents/qianduan_01/1017/images/blog-3.png">
+</div>
+<div id="nav">
+	<label for="img1">第一张</label>
+	<label for="img2">第二张</label>
+</div>
+</body>
+</html>

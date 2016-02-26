@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	//用现有的DOM方法来实现自己的getElementsByClassName
+	function getElementsByClassName(node,classname){
+		if(node.getElementsByClassName){
+			//使用现有方法
+			return node.getElementsByClassName(classname);
+		}else{
+			var results = new Array();
+			var elems = node.getElementsByTagName("*");
+			for(var i=0;i<elems.length;i++){
+				if(elems[i].clssName.indexOf(classname) != -1){
+					results[results.length] = elems[i];
+				}
+				return results;
+			}
+		}
+	}
+</script>
+</body>
+</html>
