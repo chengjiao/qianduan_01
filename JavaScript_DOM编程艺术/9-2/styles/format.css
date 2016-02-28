@@ -31,3 +31,9 @@ th,td{
 tr:nth-child(even){
 	background-color: red;
 }*/
+/*tr:hover{
+	font-weight: bold;
+}*/
+.intro{
+	background-color: pink;
+}
