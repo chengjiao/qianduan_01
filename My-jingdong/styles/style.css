@@ -66,6 +66,53 @@ li:hover .ci-right{
 	top: -7px;
 	text-decoration: none;
 }
+
+.dropdown .dd-spacer{
+	left: 93px;
+	width: 103px;
+	position: absolute;
+	top: 23px;
+	height: 10px;
+	background-color: #FFF;
+	overflow: hidden;
+	display: none;
+}
+
+.ui-areamini-content-list{
+	position: absolute;
+	top: 30px;
+	width: 301px;
+	border:1px solid #EBEBEB;
+	padding: 0 3px 3px 3px;
+	display: none;
+}
+.ui-areamini-content-list .item{
+	float: left;
+	width: 60px;
+	line-height: 30px;
+}
+.ui-areamini-content-list .item a{
+	color: #666666;
+	text-decoration: none;
+	padding: 5px 8px;
+}
+.ui-areamini-content-list .item a:hover{
+	background-color: #F5F5F5;
+	color: #C91622;
+}
+.dropdown:hover .dt{
+	background-color: #FFF;
+	border:1px solid #EBEBEB;
+}
+.dropdown:hover .dd-spacer{
+	display: block;
+	z-index: 3;
+}
+.dropdown:hover .ui-areamini-content-list{
+	display: block;
+}
+
+/*header-right*/
 .fr{
 	float: right;
 }
