@@ -1,10 +1,3 @@
-*{
-	margin:0;padding:0;
-}
-a{
-	color: #666;
-	text-decoration: none;
-}
 header{
 	width: 100%;
 	height: 30px;
@@ -43,7 +36,10 @@ header ul{
 li:hover .ci-right{
 	transform:rotate(180deg);
 }
-.fl .dt{
+.dropdown{
+	position: relative;
+}
+.dropdown .dt{
 	position: relative;
 	padding: 0 25px 0 10px;
 }
@@ -55,6 +51,7 @@ li:hover .ci-right{
 .cw-icon i{
 	display: block;
 	position: absolute;
+	overflow: hidden;
 }
 .ci-right{
 	top: 12px;
@@ -72,14 +69,14 @@ li:hover .ci-right{
 }
 
 .dropdown .dd-spacer{
-	left: 93px;
-	width: 103px;
+	left: 1px;
+	width: 89px;
 	position: absolute;
 	top: 23px;
 	height: 10px;
-	background-color: #FFF;
-	overflow: hidden;
 	display: none;
+	overflow: hidden;
+	z-index: 100;
 }
 
 .ui-areamini-content-list{
@@ -110,10 +107,12 @@ li:hover .ci-right{
 }
 .dropdown:hover .dd-spacer{
 	display: block;
-	z-index: 3;
+	z-index: 200;
+	background-color: #FFF;
 }
 .dropdown:hover .ui-areamini-content-list{
 	display: block;
+	z-index: 100;
 }
 
 /*header-right*/
@@ -165,14 +164,70 @@ li:hover .ci-right{
 }
 
 /*w*/
-#logo-2014{
+.w{
+	position: relative;
+	z-index: 1;
+}
+.w #logo-2014{
 	float: left;
 	padding-top: 20px;
+	width: 362px;
+	height: 60px;
 }
-#logo-2014 .logo{
+.w #logo-2014 .logo{
 	background: url(http://misc.360buyimg.com/lib/img/e/logo-201305.png) no-repeat 0 0;
 	display: block;
 	width: 270px;
 	height: 60px;
 	text-indent: -20000px;
+}
+#search-2014{
+	padding-top: 20px;
+	float: left;
+}
+#search-2014 .form{
+	height: 36px;
+}
+#search-2014 .text{
+	float: left;
+	width: 400px;
+	height: 24px;
+	line-height: 24px;
+	padding:4px;
+	border-color: #B61D1D;
+	border-width: 2px 0 2px 2px;
+	border-style: solid;
+	font-size: 14px;
+	font-family: "microsoft yahei"
+}
+#search-2014 .button{
+	float: left;
+	width: 82px;
+	height: 36px;
+	background-color: #B61D1D;
+	color: #FFF;
+	border:none;
+	font-size: 16px;
+	font-family: "microsoft yahei"
+}
+#settleup-2014{
+	padding-top: 20px;
+	float: right;
+	margin-right: 65px;
+}
+#settleup-2014 .cw-icon{
+	width: 75px;
+	height: 34px;
+	line-height: 34px;
+	border:1px solid #DFDFDF;
+	background-color: #F9F9F9;
+	text-align: center;
+	padding:0 28px 0 36px;
+}
+#settleup-2014 .ci-left{
+	top: 9px;
+	left: 18px;
+	width: 18px;
+	height: 16px;
+	background: url(http://misc.360buyimg.com/jdf/1.0.0/unit/globalImages/1.0.0/jd2015img.png) 0 -58px no-repeat;
 }
