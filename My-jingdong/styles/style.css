@@ -1,6 +1,10 @@
 *{
 	margin:0;padding:0;
 }
+a{
+	color: #666;
+	text-decoration: none;
+}
 header{
 	width: 100%;
 	height: 30px;
@@ -115,9 +119,14 @@ li:hover .ci-right{
 /*header-right*/
 .fr{
 	float: right;
+	height: 30px;
+	line-height: 30px;
 }
 .fr li{
-	display: inline;
+	display:block;
+	float: left;
+	height: 30px;
+	padding: 0 2px;
 }
 .fr .spacer{
 	width: 1px;
@@ -131,6 +140,39 @@ li:hover .ci-right{
 	text-decoration: none;
 	color:#666666; 
 }
+.fr li .style-red{
+	color: #C81623;
+}
 .fr li a:hover{
 	color: #C91622;
+}
+.fr .dt{
+	padding: 0 8px;
+}
+#ttbar-apps .dt .ci-left{
+	position: absolute;
+	display: block;
+	overflow: hidden;
+	top: 5px;
+	left: 7px;
+	width: 15px;
+	height: 20px;
+	background:url(http://misc.360buyimg.com/jdf/1.0.0/unit/globalImages/1.0.0/jd2015img.png) 0 0 no-repeat;
+}
+.fr #ttbar-apps .dt{
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+/*w*/
+#logo-2014{
+	float: left;
+	padding-top: 20px;
+}
+#logo-2014 .logo{
+	background: url(http://misc.360buyimg.com/lib/img/e/logo-201305.png) no-repeat 0 0;
+	display: block;
+	width: 270px;
+	height: 60px;
+	text-indent: -20000px;
 }
