@@ -67,7 +67,9 @@ li:hover .ci-right{
 	top: -7px;
 	text-decoration: none;
 }
-
+.dropdown .dd{
+	position: absolute;
+}
 .dropdown .dd-spacer{
 	left: 1px;
 	width: 89px;
@@ -164,10 +166,6 @@ li:hover .ci-right{
 }
 
 /*w*/
-.w{
-	position: relative;
-	z-index: 1;
-}
 .w #logo-2014{
 	float: left;
 	padding-top: 20px;
@@ -230,4 +228,39 @@ li:hover .ci-right{
 	width: 18px;
 	height: 16px;
 	background: url(http://misc.360buyimg.com/jdf/1.0.0/unit/globalImages/1.0.0/jd2015img.png) 0 -58px no-repeat;
+}
+#settleup-2014 .ci-right{
+	top: 10px;
+	right: 10px;
+	width: 7px;
+	height: 13px;
+	overflow: hidden;
+	font: 400 13px/13px simsun;
+	color: #999;
+}
+#settleup-2014 .ci-count{
+	position: absolute;
+	top: -3px;
+	left: 104px;
+	color: #fff;;
+	background-color: #C81623;
+	border-radius: 7px 7px 7px 0;
+	display: inline-block;
+	min-width: 12px;
+	text-align: center;
+	line-height: 12px;
+}
+#hotwords{
+	float: left;
+	margin-top: 8px;
+	height: 20px;
+	line-height: 20px;
+}
+#hotwords a{
+	margin-right: 10px;
+	white-space: nowrap;
+	color: #666;
+}
+#hotwords a:hover{
+	color: #C91622;
 }
