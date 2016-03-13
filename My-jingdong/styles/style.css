@@ -105,17 +105,17 @@ li:hover .ci-right{
 }
 .dropdown:hover .dt{
 	background-color: #FFF;
-	border:1px solid #EBEBEB;
+	/*border:1px solid #EBEBEB;*/
 }
-.dropdown:hover .dd-spacer{
+/*.dropdown:hover .dd-spacer{
 	display: block;
 	z-index: 200;
 	background-color: #FFF;
-}
-.dropdown:hover .ui-areamini-content-list{
+}*/
+/*.dropdown:hover .ui-areamini-content-list{
 	display: block;
 	z-index: 100;
-}
+}*/
 
 /*header-right*/
 .fr{
@@ -166,6 +166,9 @@ li:hover .ci-right{
 }
 
 /*w*/
+.w{
+	padding-bottom: 10px;
+}
 .w #logo-2014{
 	float: left;
 	padding-top: 20px;
@@ -263,4 +266,153 @@ li:hover .ci-right{
 }
 #hotwords a:hover{
 	color: #C91622;
+}
+
+#nav-2014{
+	border-bottom: 2px solid #B1191A;
+}
+#nav-2014 .dt{
+	float: left;
+}
+#nav-2014 .dt a{
+	color: #FFFFFF;
+	background-color:#B1191A;
+	font:400 15px/44px "microsoft yahei";
+	width: 190px;
+	height: 44px;
+	display: block;
+	padding: 0 10px; 
+	text-align: left;
+}
+#nav-2014 .nav-right{
+	float: left;
+}
+#nav-2014 .nav-right li{
+	display: inline-block;
+	font:400 16px/44px "microsoft yahei";
+	height: 44px;
+}
+#nav-2014 .nav-right a{
+	padding: 0 20px;
+	text-align: center;
+}
+#nav-2014 .nav-right a:hover{
+	color: #C91622;
+}
+#focus .focus-left{
+	float: left;
+}
+#focus .focus-left .item-f h3{
+	width: 210px;
+	padding: 0 10px;
+	background-color: #C81623;
+	position: relative;
+	border-left: 1px solid #C81623;
+	box-sizing: border-box;
+}
+#focus .focus-left .item-f a{
+	color: #FFF;
+	font: 400 14px/30px "microsoft yahei";
+}
+#focus .focus-left .item-f i{
+	position: absolute;
+	width: 4px;
+	height: 14px;
+	top: 9px;
+	right: 14px;
+	font: 400 9px/14px consolas;
+	color: #FFF;
+}
+#focus .focus-left .item-f h3:hover{
+	background-color: #F7F7F7;
+	border-left: 1px solid ##F7F7F7;
+}
+#focus .focus-left .item-f:hover a{
+		color: #B71C1C;
+}
+#focus .item-hide{
+	float: left;
+	width: 945px;/*宽度稍后要调整*/
+	padding: 20px 0 0 20px;
+	background-color: #F7F7F7;
+	border-bottom: 1px solid #B71C1C;
+	border-right: 1px solid #B71C1C;
+	display: none;
+}
+#focus .item-hide-l{
+	float: left;
+	width: 80%;
+}
+#focus .item-list{
+	display: inline-block;
+}
+#focus .item-body{
+	float: left;
+	display: inline-block;
+}
+#focus .item-body dt,dd{
+	display: inline-block;
+}
+#focus .item-list a{
+	display: inline-block;
+	color: #FFF;
+	background-color: #7C7171;
+	padding: 0 0 0 8px;
+	margin-right: 10px;
+	height: 24px;
+	line-height: 24px;
+}
+#focus .item-list i{
+	color: #FFF;
+	background-color: #5c5251;
+	width: 23px;
+	height: 24px;
+	font: 400 9px/24px consolas;
+	display: inline-block;
+	text-align: center;
+	margin-left: 8px;
+}
+#focus .item-list a:hover{
+	color: #FFF;
+	background-color: #C91622;
+}
+#focus .item-list a:hover i{
+	background-color: #B1181A;
+}
+#focus .item-body{
+	margin-top: 1em;
+	/*line-height: 2em;*/
+}
+#focus .item-body dl{
+	width: 100%;
+}
+#focus .item-body dt{
+	width: 75px;
+	margin-right: 10px;
+	text-align: right;
+	float: left;
+	line-height: 36px;
+}
+#focus .item-body i{
+	width: 23px;
+	height: 24px;
+	font: 400 9px/24px consolas;
+	display: inline-block;
+	text-align: center;
+}
+#focus .item-body dd{
+	width: 620px;
+	padding: 6px 0;
+	border-bottom: 1px solid #EDEEED;
+}
+#focus .item-body dd a{
+	float: left;
+	padding: 0 8px;
+	margin: 4px 0;
+	line-height: 16px;
+	border-left: 1px solid #e0e0e0;
+	white-space: nowrap;
+}
+#focus .item-hide:hover{
+	display: block;
 }
