@@ -1,0 +1,91 @@
+.clear{
+	clear: both;
+}
+#head{
+	border-top: 2px solid #F22A22;
+	width: 100%;
+	height: 68px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #d7d7d7;
+}
+.container{
+	width: 65%;
+	margin: 0 auto;
+}
+#head .head-l{
+	float: left;
+	width: 160px;
+	height: 68px;
+}
+#head .head-l a{
+	display: block;
+	background: url(http://sspai.com/sspai/dist/prod/img/sp_main.png) 0 0 no-repeat;
+	width: 160px;
+	height: 50px;
+	margin-top: 9px;
+}
+#head .head-m{
+	float: left;
+	padding-left: 20px;
+}
+#head li{
+	display: inline-block;
+}
+#head li a{
+	padding: 10px 20px;
+	height: 48px;
+	line-height: 48px;
+	display: inline-block;
+}
+#head li a:hover{
+	color: #FFF;
+	background-color: #D5140C;
+}
+#head .head-r{
+	float: right;
+	height: 68px;
+	line-height: 68px;
+}
+#head .head-r a{
+	color: #F54E48;
+	padding: 8px 16px;
+	border:1px solid #F54E48;
+	border-radius: 5px;
+}
+#head .head-r a:hover{
+	color: #FEF3F3;
+	background-color: #D5140C;
+}
+.content{
+	margin-top: 76px;/*防止被上面一层遮盖*/
+}
+.content p{
+	margin: 0 20px;
+	line-height: 16px;
+	font-size: 16px;
+}
+.anchor{
+	position: fixed;
+	right: 125px;
+	bottom: 95px;
+}
+.anchor a.weibo{
+	width: 50px;
+	height: 50px;
+	display: block;/*不设这个a不出现，行内元素而且没有内容填充*/
+	background: url(http://sspai.com/sspai/dist/prod/img/sp_main.png) -500px 0 no-repeat;
+}
+.anchor a.weixin{
+	width: 50px;
+	height: 50px;
+	display: block;
+	background: url(http://sspai.com/sspai/dist/prod/img/sp_main.png) -500px -60px no-repeat;
+}
+.anchor a.android{
+	width: 50px;
+	height: 50px;
+	display: block;
+	background: url(http://sspai.com/sspai/dist/prod/img/sp_main.png) -500px -120px no-repeat;
+}
